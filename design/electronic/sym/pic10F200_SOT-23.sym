@@ -1,0 +1,66 @@
+v 20100214 2
+T 2600 2000 8 10 1 1 180 0 1
+refdes=U?
+T 300 2040 5 10 0 0 0 0 1
+device=PIC10F200
+T 300 2250 5 10 0 0 0 0 1
+footprint=SOT-23
+T 300 2450 5 10 0 0 0 0 1
+numslots=0
+B 1200 500 1400 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 2900 900 2600 900 1 0 0
+{
+T 2700 950 5 8 1 1 0 0 1
+pinnumber=4
+T 2700 850 5 8 0 1 0 2 1
+pinseq=5
+T 2550 900 9 8 1 1 0 6 1
+pinlabel=GP2/T0CKI/FOSC4 
+T 2550 900 5 8 0 1 0 8 1
+pintype=io
+}
+P 2900 1200 2600 1200 1 0 0
+{
+T 2700 1250 5 8 1 1 0 0 1
+pinnumber=3
+T 2700 1150 5 8 0 1 0 2 1
+pinseq=6
+T 2550 1200 9 8 1 1 0 6 1
+pinlabel=GP1/ICSPCLK 
+T 2550 1200 5 8 0 1 0 8 1
+pintype=io
+}
+P 2900 1500 2600 1500 1 0 0
+{
+T 2700 1550 5 8 1 1 0 0 1
+pinnumber=1
+T 2700 1450 5 8 0 1 0 2 1
+pinseq=7
+T 2550 1500 9 8 1 1 0 6 1
+pinlabel=GP0/ICSPDAT
+T 2550 1500 5 8 0 1 0 8 1
+pintype=io
+}
+T 300 3050 5 10 0 0 0 0 1
+net=Vdd:2
+T 300 3250 5 10 0 0 0 0 1
+net=Vss:7
+T 300 2650 5 10 0 0 0 0 1
+description=8-bit CMOS microcontroller
+T 300 2850 5 10 0 0 0 0 1
+documentation=http://www.microchip.com/download/lit/pline/picmicro/families/12c5xx/41239D.pdf
+T 1200 1750 9 10 1 0 0 0 1
+PIC10F200
+T 300 3450 5 10 0 0 0 0 1
+symversion=0.1
+P 2900 600 2600 600 1 0 0
+{
+T 2700 650 5 8 1 1 0 0 1
+pinnumber=6
+T 2700 550 5 8 0 1 0 2 1
+pinseq=10
+T 2550 600 9 8 1 1 0 6 1
+pinlabel=GP3/MCLR/VPP
+T 2550 600 5 8 0 1 0 8 1
+pintype=io
+}
