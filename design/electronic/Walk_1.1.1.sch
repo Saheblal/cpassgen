@@ -5,11 +5,11 @@ C 44200 46600 1 270 0 led-1.sym
 T 44800 45800 5 10 0 0 270 0 1
 device=LED
 T 44600 45800 5 10 1 1 270 0 1
-refdes=L_RED
+refdes=LEDR
 T 45000 45800 5 10 0 0 270 0 1
 symversion=0.1
 T 44200 46600 5 10 0 0 270 0 1
-footprint=LED8MM
+footprint=MY_LED8MM
 T 44700 46700 5 10 1 1 270 0 1
 value=PIROS
 }
@@ -18,31 +18,31 @@ C 46900 45600 1 90 0 led-1.sym
 T 46300 46400 5 10 0 0 90 0 1
 device=LED
 T 46500 46400 5 10 1 1 90 0 1
-refdes=L_GREEN
+refdes=LEDG
 T 46100 46400 5 10 0 0 90 0 1
 symversion=0.1
 T 46900 45600 5 10 0 0 90 0 1
-footprint=LED8MM
+footprint=MY_LED8MM
 T 46900 46400 5 10 1 1 90 0 1
 value=ZÖLD
 }
 C 48200 44200 1 0 0 connector1-2.sym
 {
 T 48900 45100 5 10 1 1 0 6 1
-refdes=1
+refdes=I1
 T 48500 45050 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 48500 45250 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 C 48200 47100 1 0 0 connector1-2.sym
 {
 T 48900 48000 5 10 1 1 0 6 1
-refdes=2
+refdes=I2
 T 48500 47950 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 48500 48150 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 T 50000 40400 9 10 1 0 0 0 1
 Walk_1.1.1

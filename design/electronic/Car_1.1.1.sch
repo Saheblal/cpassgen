@@ -16,7 +16,7 @@ refdes=RG
 T 44900 50000 5 10 0 0 0 0 1
 netname=GRAY_NET
 T 44000 49900 5 10 0 0 0 0 1
-footprint=MY_RES_03
+footprint=SMD_SIMPLE 120 60
 }
 C 45300 47400 1 0 0 resistor-2.sym
 {
@@ -27,7 +27,7 @@ refdes=RP
 T 46200 47500 5 10 0 0 0 0 1
 netname=PURPLE_NET
 T 45300 47400 5 10 0 0 0 0 1
-footprint=MY_RES_03
+footprint=SMD_SIMPLE 120 60
 }
 C 45300 45500 1 0 0 resistor-2.sym
 {
@@ -38,7 +38,7 @@ refdes=RB
 T 46200 45600 5 10 0 0 0 0 1
 netname=BLACK_NET
 T 45300 45500 5 10 0 0 0 0 1
-footprint=MY_RES_03
+footprint=SMD_SIMPLE 120 60
 }
 C 44300 43500 1 0 0 resistor-2.sym
 {
@@ -49,7 +49,7 @@ refdes=RW
 T 45200 43600 5 10 0 0 0 0 1
 netname=BROWN_NET
 T 44300 43500 5 10 0 0 0 0 1
-footprint=MY_RES_03
+footprint=SMD_SIMPLE 120 60
 }
 C 45100 44400 1 0 0 switch-pushbutton-no-1.sym
 {
@@ -266,15 +266,15 @@ L 46000 42300 46500 42300 3 0 0 0 -1 -1
 T 41600 41700 9 10 1 0 0 0 1
 33 BROWN
 N 44900 47500 45300 47500 4
-C 40500 45900 1 0 0 pic12F508-DIP8.sym
+C 40500 45800 1 0 0 pic12F508-DIP8.sym
 {
-T 43100 48100 5 10 1 1 180 0 1
+T 43100 48000 5 10 1 1 180 0 1
 refdes=U1
-T 40800 48240 5 10 0 0 0 0 1
+T 40800 48140 5 10 0 0 0 0 1
 device=PIC12F508
-T 40800 48450 5 10 0 0 0 0 1
+T 40800 48350 5 10 0 0 0 0 1
 footprint=DIP8
-T 40800 49650 5 10 0 0 0 0 1
+T 40800 49550 5 10 0 0 0 0 1
 symversion=0.1
 }
 C 42100 44400 1 0 0 switch-pushbutton-no-1.sym

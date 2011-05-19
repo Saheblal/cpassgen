@@ -5,11 +5,11 @@ C 49400 48900 1 0 0 led-1.sym
 T 50200 49500 5 10 0 0 0 0 1
 device=LED
 T 50200 49300 5 10 1 1 0 0 1
-refdes=LED1
+refdes=LEDR
 T 50200 49700 5 10 0 0 0 0 1
 symversion=0.1
 T 49400 48900 5 10 0 0 0 0 1
-footprint=LED8MM
+footprint=MY_LED8MM
 T 49400 48900 5 10 1 1 0 0 1
 description=RED LED
 }
@@ -18,11 +18,11 @@ C 50300 48200 1 180 0 led-1.sym
 T 49500 47600 5 10 0 0 180 0 1
 device=LED
 T 49500 47800 5 10 1 1 180 0 1
-refdes=LED2
+refdes=LEDY
 T 49500 47400 5 10 0 0 180 0 1
 symversion=0.1
 T 50300 48200 5 10 0 0 180 0 1
-footprint=LED8MM
+footprint=MY_LED8MM
 T 50300 48200 5 10 1 1 180 0 1
 description=YELLOW LED
 }
@@ -31,11 +31,11 @@ C 49400 46500 1 0 0 led-1.sym
 T 50200 47100 5 10 0 0 0 0 1
 device=LED
 T 50200 46900 5 10 1 1 0 0 1
-refdes=LED3
+refdes=LEDG
 T 50200 47300 5 10 0 0 0 0 1
 symversion=0.1
 T 49400 46500 5 10 0 0 0 0 1
-footprint=LED8MM
+footprint=MY_LED8MM
 T 49400 46500 5 10 1 1 0 0 1
 description=GREEN LED
 }
@@ -46,7 +46,7 @@ refdes=O1
 T 54500 48450 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 54500 48650 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 C 52400 48700 1 0 0 connector1-2.sym
 {
@@ -55,7 +55,7 @@ refdes=I1
 T 52700 49550 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 52700 49750 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 C 52000 46300 1 0 0 connector1-2.sym
 {
@@ -64,7 +64,7 @@ refdes=I3
 T 52300 47150 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 52300 47350 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 C 46500 49400 1 0 0 connector1-2.sym
 {
@@ -73,7 +73,7 @@ refdes=I2
 T 46800 50250 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 46800 50450 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 N 46500 49100 49400 49100 4
 N 48400 46700 48400 49100 4
@@ -99,7 +99,7 @@ refdes=O3
 T 52300 45250 5 10 0 0 0 0 1
 device=CONNECTOR_1
 T 52300 45450 5 10 0 0 0 0 1
-footprint=SIP1
+footprint=MY_SIP-1
 }
 N 51200 46700 51200 44800 4
 N 51200 44800 52000 44800 4
