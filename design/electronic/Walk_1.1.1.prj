@@ -1,0 +1,3 @@
+elements-dir ~/geda/pcb-elements
+schematics Walk_1.1.1.sch
+output-name pcb/Walk_1.1.1

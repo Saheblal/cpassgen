@@ -1,0 +1,3 @@
+elements-dir ~/geda/pcb-elements
+schematics Car_2.1.1.sch
+output-name pcb/Car_2.1.1
