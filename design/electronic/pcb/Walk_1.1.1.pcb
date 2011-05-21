@@ -1,7 +1,7 @@
 # release: pcb 20091103
-# date:    Wed May 18 14:44:56 2011
-# user:    bekeband (Beke András,,,)
-# host:    bekeband-laptop
+# date:    Sat May 21 08:52:47 2011
+# user:    bandi (Bandi,,,,)
+# host:    bekeband-desktop
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -13,7 +13,7 @@ Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[1000 1000 1000 1000 1000 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin,locknames")
+Flags("nameonpcb,uniquename,clearnew,snappin,onlynames")
 Groups("1,c:2,s")
 Styles["Signal,1600,4000,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -797,6 +797,10 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
+Via[7000 90000 11000 3000 14000 9000 "" "hole"]
+Via[55000 7000 11000 3000 14000 9000 "" "hole"]
+Via[55000 90000 11000 3000 14000 9000 "" "hole"]
+Via[7000 7000 11000 3000 14000 9000 "" "hole"]
 
 Element["" "MY_LED8MM" "LEDG" "unknown" 25000 69000 0 7000 0 100 ""]
 (
@@ -837,22 +841,6 @@ Element["" "MY_SIP-1" "I2" "unknown" 50000 49000 -1000 7000 0 100 ""]
 	)
 Layer(1 "alkatrész")
 (
-	Polygon("clearpoly")
-	(
-		[47000 0] [62000 0] [62000 15000] [47000 15000] 
-	)
-	Polygon("clearpoly")
-	(
-		[0 0] [15000 0] [15000 15000] [0 15000] 
-	)
-	Polygon("clearpoly")
-	(
-		[47000 82000] [62000 82000] [62000 97000] [47000 97000] 
-	)
-	Polygon("clearpoly")
-	(
-		[0 82000] [15000 82000] [15000 97000] [0 97000] 
-	)
 )
 Layer(2 "forrasztási")
 (
@@ -871,7 +859,7 @@ Layer(2 "forrasztási")
 Layer(3 "silk")
 (
 )
-Layer(4 "silk")
+Layer(4 "silk1")
 (
 )
 NetList()

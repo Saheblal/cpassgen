@@ -1,7 +1,7 @@
 # release: pcb 20091103
-# date:    Thu May 19 13:55:52 2011
-# user:    bekeband (Beke András,,,)
-# host:    bekeband-laptop
+# date:    Sat May 21 07:39:48 2011
+# user:    bandi (Bandi,,,,)
+# host:    bekeband-desktop
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -797,10 +797,10 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
-Via[7000 173000 4000 2000 0 2000 "" ""]
-Via[55000 7000 4000 2000 0 2000 "" "selected"]
-Via[55000 173000 4000 2000 0 2000 "" ""]
-Via[7000 7000 5000 2000 0 2000 "" ""]
+Via[7000 173000 11000 3000 14000 9000 "" "hole"]
+Via[55000 7000 11000 3000 14000 9000 "" "hole"]
+Via[55000 173000 11000 3000 14000 9000 "" "hole"]
+Via[7000 7000 11000 3000 14000 9000 "" "hole"]
 
 Element["" "MY_SIP-1" "O3" "unknown" 46000 51000 0 -13000 0 100 ""]
 (

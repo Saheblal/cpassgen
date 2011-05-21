@@ -1,7 +1,7 @@
 # release: pcb 20091103
-# date:    Thu May 19 14:25:57 2011
-# user:    bekeband (Beke András,,,)
-# host:    bekeband-laptop
+# date:    Sat May 21 08:35:21 2011
+# user:    bandi (Bandi,,,,)
+# host:    bekeband-desktop
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -802,6 +802,10 @@ Via[32199 53200 4000 2000 0 2000 "" "auto"]
 Via[39099 70500 4000 2000 0 2000 "" "auto"]
 Via[31100 102748 4000 2000 0 2000 "" "auto"]
 Via[50000 82898 4000 2000 0 2000 "" "auto"]
+Via[7000 173000 11000 3000 14000 9000 "" "hole"]
+Via[55000 7000 11000 3000 14000 9000 "" "hole"]
+Via[55000 173000 11000 3000 14000 9000 "" "hole"]
+Via[7000 7000 11000 3000 14000 9000 "" "hole"]
 
 Element["" "SMD_SIMPLE-120-60" "RW" "unknown" 9161 70664 12397 6362 3 100 ""]
 (
@@ -1142,22 +1146,6 @@ Layer(1 "alkatrész")
 	Line[9047 155000 9047 155001 1800 2000 "clearline,auto"]
 	Line[31100 102748 20948 102748 2500 2000 "clearline"]
 	Line[20948 102748 14948 108748 2500 2000 "clearline"]
-	Polygon("clearpoly")
-	(
-		[0 0] [12000 0] [12000 12000] [0 12000] 
-	)
-	Polygon("clearpoly")
-	(
-		[50000 0] [62000 0] [62000 12000] [50000 12000] 
-	)
-	Polygon("clearpoly")
-	(
-		[0 168000] [12000 168000] [12000 180000] [0 180000] 
-	)
-	Polygon("clearpoly")
-	(
-		[50000 168000] [62000 168000] [62000 180000] [50000 180000] 
-	)
 )
 Layer(2 "forrasztási")
 (
@@ -1254,22 +1242,6 @@ Layer(2 "forrasztási")
 	Line[21000 7000 40000 7000 1800 2000 "clearline"]
 	Line[40000 7000 44000 11000 1800 2000 "clearline"]
 	Line[44000 11000 44000 26000 1800 2000 "clearline"]
-	Polygon("clearpoly")
-	(
-		[0 0] [12000 0] [12000 12000] [0 12000] 
-	)
-	Polygon("clearpoly")
-	(
-		[50000 0] [62000 0] [62000 12000] [50000 12000] 
-	)
-	Polygon("clearpoly")
-	(
-		[50000 168000] [62000 168000] [62000 180000] [50000 180000] 
-	)
-	Polygon("clearpoly")
-	(
-		[0 168000] [12000 168000] [12000 180000] [0 180000] 
-	)
 )
 Layer(3 "silk")
 (
