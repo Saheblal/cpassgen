@@ -1,0 +1,30 @@
+	# grab the input values and convert to 1/100 mil
+	# how much to grow the pads by for soldermask [1/100 mil]
+	# clearance from planes [1/100 mil]
+	# silk screen width  [1/100 mil]
+	# courtyard silk screen width  [1/100 mil]
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+Element[0x00000000 "DTSM 61N/SMD PUSH BUTTON" "PB1" "DTSM 61N/SMD" 0 0 0 0 0 100 0]
+(
+# 
+# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
+	Pad[0 0 984 0 5118 2000 6000 "1" "1" "square"]
+	Pad[31298 0 32282 0 5118 2000 6000 "1" "1" "square"]
+	Pad[0 17716 984 17716 5118 2000 6000 "2" "2" "square"]
+	Pad[31298 17716 32282 17716 5118 2000 6000 "2" "2" "square"]
+	ElementLine[5300 -1000 27000 -1000 1000]
+	ElementLine[5300 18000 27000 18000 1000]
+	ElementLine[5300 -1000 5300 18000 1000]
+	ElementLine[27000 -1000 27000 18000 1000]
+	ElementArc [16000 8000 6000 6000 0 360 1000]
+#
+# This draws a 1 mil placement courtyard outline in silk.  It should probably
+# not be included since you wont want to try and fab a 1 mil silk line.  Then
+# again, it is most useful during parts placement.  It really is time for some
+# additional non-fab layers...
+#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
+#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
+#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
+#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
+)
