@@ -1,21 +1,21 @@
 # release: pcb 20091103
-# date:    Sun Jun  5 10:07:38 2011
+# date:    Sun Jun  5 13:49:11 2011
 # user:    bandi (Bandi,,,,)
 # host:    bekeband-desktop
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["" 600000 500000]
+PCB["" 51000 100000]
 
-Grid[10000.000000 0 0 0]
+Grid[1000.000000 0 0 0]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[1000 1000 1000 1000 1500 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+DRC[1000 1000 1000 600 1500 600]
+Flags("nameonpcb,uniquename,clearnew,snappin,locknames")
 Groups("1,c:2,s:3:4:5:6:7:8")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Styles["Signal,800,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -798,51 +798,40 @@ Symbol('~' 12)
 	SymbolLine(20 35 25 30 8)
 )
 
-Element["" "PRG_CON_SMD" "VP" "unknown" 550000 20000 0 0 0 100 ""]
+Element["onsolder" "SMD_SIMPLE-60-30" "RP" "unknown" 22000 91500 2500 -5000 0 100 "auto"]
 (
-	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
-	ElementLine [-5000 -5000 7000 -5000 800]
-	ElementLine [-5000 5000 7000 5000 800]
-	ElementLine [-5000 -5000 -5000 5000 800]
-	ElementLine [7000 5000 7000 -5000 800]
+	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "onsolder,square"]
+	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "onsolder,square"]
+	ElementLine [-3000 3500 -3000 -3500 800]
+	ElementLine [-3000 -3500 9000 -3500 800]
+	ElementLine [9000 -3500 9000 3500 800]
+	ElementLine [9000 3500 -3000 3500 800]
 
 	)
 
-Element["" "PRG_CON_SMD" "CLK" "unknown" 520000 20000 0 0 0 100 ""]
+Element["onsolder" "SMD_SIMPLE-60-30" "RG" "unknown" 19000 72500 2500 -5000 0 100 "auto"]
 (
-	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
-	ElementLine [-5000 -5000 7000 -5000 800]
-	ElementLine [-5000 5000 7000 5000 800]
-	ElementLine [-5000 -5000 -5000 5000 800]
-	ElementLine [7000 5000 7000 -5000 800]
+	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "onsolder,square"]
+	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "onsolder,square"]
+	ElementLine [-3000 3500 -3000 -3500 800]
+	ElementLine [-3000 -3500 9000 -3500 800]
+	ElementLine [9000 -3500 9000 3500 800]
+	ElementLine [9000 3500 -3000 3500 800]
 
 	)
 
-Element["" "PRG_CON_SMD" "DT" "unknown" 500000 20000 0 0 0 100 ""]
+Element["onsolder" "SMD_SIMPLE-60-30" "RW" "unknown" 23000 40500 2500 -5000 0 100 "auto"]
 (
-	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
-	ElementLine [-5000 -5000 7000 -5000 800]
-	ElementLine [-5000 5000 7000 5000 800]
-	ElementLine [-5000 -5000 -5000 5000 800]
-	ElementLine [7000 5000 7000 -5000 800]
+	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "onsolder,square"]
+	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "onsolder,square"]
+	ElementLine [-3000 3500 -3000 -3500 800]
+	ElementLine [-3000 -3500 9000 -3500 800]
+	ElementLine [9000 -3500 9000 3500 800]
+	ElementLine [9000 3500 -3000 3500 800]
 
 	)
 
-Element["" "DTSM-61X-SMD" "S2" "unknown" 450000 20000 0 0 0 100 ""]
-(
-	Pad[0 0 984 0 5118 2000 6000 "1" "1" "square"]
-	Pad[31298 0 32282 0 5118 2000 6000 "1" "1" "square,edge2"]
-	Pad[0 17716 984 17716 5118 2000 6000 "2" "2" "square"]
-	Pad[31298 17716 32282 17716 5118 2000 6000 "2" "2" "square,edge2"]
-	ElementLine [5300 -1000 27000 -1000 1000]
-	ElementLine [5300 18000 27000 18000 1000]
-	ElementLine [5300 -1000 5300 18000 1000]
-	ElementLine [27000 -1000 27000 18000 1000]
-	ElementArc [16000 8000 6000 6000 0 360 1000]
-
-	)
-
-Element["" "SOIC_8" "U1" "unknown" 420000 20000 0 0 0 100 "pin"]
+Element["" "SOIC_8" "U1" "unknown" 26000 24000 0 0 0 100 "pin"]
 (
 	Pad[0 0 0 3740 2362 2000 3552 "8" "8" "square"]
 	Pad[5000 0 5000 3740 2362 2000 3552 "7" "7" "square"]
@@ -863,7 +852,7 @@ Element["" "SOIC_8" "U1" "unknown" 420000 20000 0 0 0 100 "pin"]
 
 	)
 
-Element["" "PRG_CON_SMD" "BR2" "unknown" 400000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "GR1" "unknown" 30000 8000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -873,41 +862,31 @@ Element["" "PRG_CON_SMD" "BR2" "unknown" 400000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "KPT-3216-LED" "LEDY" "unknown" 360000 20000 0 0 0 100 ""]
+Element["onsolder" "KPT-3216-LED" "LEDY" "unknown" 18237 50000 0 0 0 100 "auto"]
 (
-	Pad[0 0 984 0 5905 2000 6600 "1" "1" "square"]
-	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "square,edge2"]
-	ElementLine [10000 -2000 10000 2000 1000]
+	Pad[0 0 984 0 5905 2000 6600 "1" "1" "onsolder,square"]
+	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "onsolder,square,edge2"]
+	ElementLine [10000 2000 10000 -2000 1000]
 
 	)
 
-Element["" "KPT-3216-LED" "LEDR" "unknown" 330000 20000 0 0 0 100 ""]
+Element["onsolder" "KPT-3216-LED" "LEDR" "unknown" 18253 17000 0 0 0 100 "auto"]
 (
-	Pad[0 0 984 0 5905 2000 6600 "1" "1" "square"]
-	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "square,edge2"]
-	ElementLine [10000 -2000 10000 2000 1000]
+	Pad[0 0 984 0 5905 2000 6600 "1" "1" "onsolder,square"]
+	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "onsolder,square,edge2"]
+	ElementLine [10000 2000 10000 -2000 1000]
 
 	)
 
-Element["" "KPT-3216-LED" "LEDG" "unknown" 300000 20000 0 0 0 100 ""]
+Element["onsolder" "KPT-3216-LED" "LEDG" "unknown" 18237 83000 0 0 0 100 "auto"]
 (
-	Pad[0 0 984 0 5905 2000 6600 "1" "1" "square"]
-	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "square,edge2"]
-	ElementLine [10000 -2000 10000 2000 1000]
+	Pad[0 0 984 0 5905 2000 6600 "1" "1" "onsolder,square"]
+	Pad[14763 0 15747 0 5905 2000 6600 "2" "2" "onsolder,square,edge2"]
+	ElementLine [10000 2000 10000 -2000 1000]
 
 	)
 
-Element["" "PRG_CON_SMD" "BL1" "unknown" 280000 20000 0 0 0 100 ""]
-(
-	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
-	ElementLine [-5000 -5000 7000 -5000 800]
-	ElementLine [-5000 5000 7000 5000 800]
-	ElementLine [-5000 -5000 -5000 5000 800]
-	ElementLine [7000 5000 7000 -5000 800]
-
-	)
-
-Element["" "PRG_CON_SMD" "BR1" "unknown" 250000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "BL1" "unknown" 9000 35000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -917,7 +896,7 @@ Element["" "PRG_CON_SMD" "BR1" "unknown" 250000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "PRG_CON_SMD" "PU1" "unknown" 230000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "BR1" "unknown" 9000 48000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -927,7 +906,7 @@ Element["" "PRG_CON_SMD" "PU1" "unknown" 230000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "PRG_CON_SMD" "GR1" "unknown" 210000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "PU1" "unknown" 9000 23000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -937,7 +916,7 @@ Element["" "PRG_CON_SMD" "GR1" "unknown" 210000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "PRG_CON_SMD" "CS" "unknown" 180000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "BR2" "unknown" 16000 8000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -947,7 +926,7 @@ Element["" "PRG_CON_SMD" "CS" "unknown" 180000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "PRG_CON_SMD" "CV" "unknown" 160000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "CS" "unknown" 25000 60000 0 0 0 100 ""]
 (
 	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
 	ElementLine [-5000 -5000 7000 -5000 800]
@@ -957,7 +936,17 @@ Element["" "PRG_CON_SMD" "CV" "unknown" 160000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "DTSM-61X-SMD" "S1" "unknown" 110000 20000 0 0 0 100 ""]
+Element["" "PRG_CON_SMD" "CV" "unknown" 41000 60000 0 0 0 100 ""]
+(
+	Pad[0 0 2000 0 6000 2000 7000 "1" "1" ""]
+	ElementLine [-5000 -5000 7000 -5000 800]
+	ElementLine [-5000 5000 7000 5000 800]
+	ElementLine [-5000 -5000 -5000 5000 800]
+	ElementLine [7000 5000 7000 -5000 800]
+
+	)
+
+Element["" "DTSM-61X-SMD" "S1" "unknown" 9000 75000 0 0 0 100 ""]
 (
 	Pad[0 0 984 0 5118 2000 6000 "1" "1" "square"]
 	Pad[31298 0 32282 0 5118 2000 6000 "1" "1" "square,edge2"]
@@ -971,49 +960,71 @@ Element["" "DTSM-61X-SMD" "S1" "unknown" 110000 20000 0 0 0 100 ""]
 
 	)
 
-Element["" "SMD_SIMPLE-60-30" "RW" "unknown" 90000 20000 2500 5000 0 100 ""]
+Element["onsolder" "SMD_SIMPLE-60-30" "RB" "unknown" 24000 58500 2500 -5000 0 100 "auto"]
 (
-	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "square"]
-	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "square"]
-	ElementLine [-3000 -3500 -3000 3500 800]
-	ElementLine [-3000 3500 9000 3500 800]
-	ElementLine [9000 3500 9000 -3500 800]
-	ElementLine [9000 -3500 -3000 -3500 800]
+	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "onsolder,square"]
+	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "onsolder,square"]
+	ElementLine [-3000 3500 -3000 -3500 800]
+	ElementLine [-3000 -3500 9000 -3500 800]
+	ElementLine [9000 -3500 9000 3500 800]
+	ElementLine [9000 3500 -3000 3500 800]
 
 	)
 
-Element["" "SMD_SIMPLE-60-30" "RB" "unknown" 60000 20000 2500 5000 0 100 ""]
+Element["onsolder" "PRG_CON_SMD" "DT" "unknown" 9000 21000 0 0 0 100 "auto"]
 (
-	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "square"]
-	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "square"]
-	ElementLine [-3000 -3500 -3000 3500 800]
-	ElementLine [-3000 3500 9000 3500 800]
-	ElementLine [9000 3500 9000 -3500 800]
-	ElementLine [9000 -3500 -3000 -3500 800]
+	Pad[0 0 2000 0 6000 2000 7000 "1" "1" "onsolder"]
+	ElementLine [-5000 5000 7000 5000 800]
+	ElementLine [-5000 -5000 7000 -5000 800]
+	ElementLine [-5000 5000 -5000 -5000 800]
+	ElementLine [7000 -5000 7000 5000 800]
 
 	)
 
-Element["" "SMD_SIMPLE-60-30" "RP" "unknown" 40000 20000 2500 5000 0 100 ""]
+Element["onsolder" "PRG_CON_SMD" "CLK" "unknown" 9000 32000 0 0 0 100 "auto"]
 (
-	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "square"]
-	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "square"]
-	ElementLine [-3000 -3500 -3000 3500 800]
-	ElementLine [-3000 3500 9000 3500 800]
-	ElementLine [9000 3500 9000 -3500 800]
-	ElementLine [9000 -3500 -3000 -3500 800]
+	Pad[0 0 2000 0 6000 2000 7000 "1" "1" "onsolder"]
+	ElementLine [-5000 5000 7000 5000 800]
+	ElementLine [-5000 -5000 7000 -5000 800]
+	ElementLine [-5000 5000 -5000 -5000 800]
+	ElementLine [7000 -5000 7000 5000 800]
 
 	)
 
-Element["" "SMD_SIMPLE-60-30" "RG" "unknown" 20000 20000 2500 5000 0 100 ""]
+Element["onsolder" "PRG_CON_SMD" "VP" "unknown" 9000 43000 0 0 0 100 "auto"]
 (
-	Pad[0 -500 0 500 3000 3000 3600 "1" "1" "square"]
-	Pad[6000 -500 6000 500 3000 3000 3600 "2" "2" "square"]
-	ElementLine [-3000 -3500 -3000 3500 800]
-	ElementLine [-3000 3500 9000 3500 800]
-	ElementLine [9000 3500 9000 -3500 800]
-	ElementLine [9000 -3500 -3000 -3500 800]
+	Pad[0 0 2000 0 6000 2000 7000 "1" "1" "onsolder"]
+	ElementLine [-5000 5000 7000 5000 800]
+	ElementLine [-5000 -5000 7000 -5000 800]
+	ElementLine [-5000 5000 -5000 -5000 800]
+	ElementLine [7000 -5000 7000 5000 800]
 
 	)
+Rat[30000 8000 0 34000 17000 1  ""]
+Rat[34000 17000 1 18237 50000 1  ""]
+Rat[18237 50000 1 25000 72000 1  ""]
+Rat[25000 72000 1 18237 83000 1  ""]
+Rat[9000 21000 1 31000 24000 0  ""]
+Rat[31000 24000 0 19000 72000 1  ""]
+Rat[33984 83000 1 28000 91000 1  ""]
+Rat[33984 83000 1 9000 23000 0  ""]
+Rat[9000 32000 1 36000 24000 0  ""]
+Rat[9000 32000 1 22000 91000 1  ""]
+Rat[9000 35000 0 18253 17000 1  ""]
+Rat[9000 35000 0 33984 50000 1  ""]
+Rat[33984 50000 1 30000 58000 1  ""]
+Rat[24000 58000 1 9000 43000 1  ""]
+Rat[9000 43000 1 41000 24000 0  ""]
+Rat[9000 48000 0 29000 40000 1  ""]
+Rat[29000 40000 1 16000 8000 0  ""]
+Rat[23000 40000 1 36000 49000 0  ""]
+Rat[41282 75000 0 41000 49000 0  ""]
+Rat[41282 75000 0 9000 75000 0  ""]
+Rat[41000 60000 0 26000 49000 0  ""]
+Rat[25000 60000 0 31000 49000 0  ""]
+Rat[31000 49000 0 26000 24000 0  ""]
+Rat[25000 60000 0 9000 92716 0  ""]
+Rat[9000 92716 0 41282 92716 0  ""]
 Layer(1 "component")
 (
 )
@@ -1043,4 +1054,74 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
+)
+NetList()
+(
+	Net("unnamed_net1" "(unknown)")
+	(
+		Connect("GR1-1")
+		Connect("LEDG-1")
+		Connect("LEDR-2")
+		Connect("LEDY-1")
+		Connect("RG-2")
+	)
+	Net("unnamed_net2" "(unknown)")
+	(
+		Connect("DT-1")
+		Connect("RG-1")
+		Connect("U1-7")
+	)
+	Net("unnamed_net3" "(unknown)")
+	(
+		Connect("LEDG-2")
+		Connect("PU1-1")
+		Connect("RP-2")
+	)
+	Net("unnamed_net4" "(unknown)")
+	(
+		Connect("CLK-1")
+		Connect("RP-1")
+		Connect("U1-6")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("BL1-1")
+		Connect("LEDR-1")
+		Connect("LEDY-2")
+		Connect("RB-2")
+	)
+	Net("unnamed_net6" "(unknown)")
+	(
+		Connect("RB-1")
+		Connect("U1-5")
+		Connect("VP-1")
+	)
+	Net("unnamed_net7" "(unknown)")
+	(
+		Connect("BR1-1")
+		Connect("BR2-1")
+		Connect("RW-2")
+	)
+	Net("unnamed_net8" "(unknown)")
+	(
+		Connect("RW-1")
+		Connect("U1-3")
+	)
+	Net("unnamed_net9" "(unknown)")
+	(
+		Connect("S1-1")
+		Connect("U1-4")
+	)
+	Net("Vdd" "(unknown)")
+	(
+		Connect("CV-1")
+		Connect("U1-1")
+	)
+	Net("Vss" "(unknown)")
+	(
+		Connect("CS-1")
+		Connect("S1-2")
+		Connect("U1-2")
+		Connect("U1-8")
+	)
 )
