@@ -1,0 +1,12 @@
+unnamed_net10	S2-2 U1-2 
+Vdd	U1-1 CV-1 
+Vss	S2-1 U1-8 CS-1 S1-2 
+unnamed_net9	U1-4 S1-1 
+unnamed_net8	U1-3 RW-1 
+unnamed_net7	BR2-1 BR1-1 RW-2 
+unnamed_net6	VP-1 U1-5 RB-1 
+unnamed_net5	LEDR-1 LEDY-2 BL1-1 RB-2 
+unnamed_net4	CLK-1 U1-6 RP-1 
+unnamed_net3	LEDG-2 PU1-1 RP-2 
+unnamed_net2	DT-1 U1-7 RG-1 
+unnamed_net1	LEDY-1 LEDR-2 GR1-1 LEDG-1 RG-2 
