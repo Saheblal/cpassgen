@@ -16,7 +16,7 @@ refdes=RG
 T 44900 50000 5 10 0 0 0 0 1
 netname=GRAY_NET
 T 44000 49900 5 10 0 0 0 0 1
-footprint=SMD_SIMPLE 120 60
+footprint=SMD_SIMPLE 60 30
 }
 C 45300 47400 1 0 0 resistor-2.sym
 {
@@ -27,7 +27,7 @@ refdes=RP
 T 46200 47500 5 10 0 0 0 0 1
 netname=PURPLE_NET
 T 45300 47400 5 10 0 0 0 0 1
-footprint=SMD_SIMPLE 120 60
+footprint=SMD_SIMPLE 60 30
 }
 C 45300 45500 1 0 0 resistor-2.sym
 {
@@ -38,7 +38,7 @@ refdes=RB
 T 46200 45600 5 10 0 0 0 0 1
 netname=BLACK_NET
 T 45300 45500 5 10 0 0 0 0 1
-footprint=SMD_SIMPLE 120 60
+footprint=SMD_SIMPLE 60 30
 }
 C 44300 43500 1 0 0 resistor-2.sym
 {
@@ -49,7 +49,7 @@ refdes=RW
 T 45200 43600 5 10 0 0 0 0 1
 netname=BROWN_NET
 T 44300 43500 5 10 0 0 0 0 1
-footprint=SMD_SIMPLE 120 60
+footprint=SMD_SIMPLE 60 30
 }
 C 45100 44400 1 0 0 switch-pushbutton-no-1.sym
 {
