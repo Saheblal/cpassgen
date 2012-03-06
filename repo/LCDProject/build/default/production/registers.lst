@@ -1,0 +1,70 @@
+MPASM  5.42  /HOME/BEKEBAND/MPLABXPROJECTS/MA   3-4-2012  15:48:51         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 
+                      00002 
+                      00003 ;#include "registers.inc"
+                      00004 
+  0000                00005     global  AX, AH, AL, BX, BH, BL, CX, CH, CL
+  0000                00006     global  DX, DH, DL, SI, SIH, SIL, DI, DIH, DIL
+                      00007 
+                      00008 GLOBAL_REGISTERS    udata_shr   ; shared bank for 8086 like registers.
+0000                  00009 AX
+0000                  00010 AL  res 1
+0001                  00011 AH  res 1
+0002                  00012 BX
+0002                  00013 BL  res 1
+0003                  00014 BH  res 1
+0004                  00015 CX
+0004                  00016 CL  res 1
+0005                  00017 CH  res 1
+0006                  00018 DX
+0006                  00019 DL  res 1
+0007                  00020 DH  res 1
+                      00021 
+0008                  00022 SI  
+0008                  00023 SIL res 1
+0009                  00024 SIH res 1
+                      00025 ;SIB res 2
+000A                  00026 DI  
+000A                  00027 DIL res 1
+000B                  00028 DIH res 1
+                      00029 ;DIB res 2
+                      00030 
+                      00031 ;SP  res 2
+                      00032 
+                      00033     END
+MPASM  5.42  /HOME/BEKEBAND/MPLABXPROJECTS/MA   3-4-2012  15:48:51         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+AH                                00000001
+AL                                00000000
+AX                                00000000
+BH                                00000003
+BL                                00000002
+BX                                00000002
+CH                                00000005
+CL                                00000004
+CX                                00000004
+DH                                00000007
+DI                                0000000A
+DIH                               0000000B
+DIL                               0000000A
+DL                                00000006
+DX                                00000006
+SI                                00000008
+SIH                               00000009
+SIL                               00000008
+__16F877A                         00000001
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
