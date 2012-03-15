@@ -19,11 +19,10 @@ prg_checksum
         movfw   BH
         movwf   EEADRH
         movfw   BL
-        movwf   EEADR       ; mov start address onto EEADRH:EEADR register
+        movwf   EEADR       ; mov start address onto EEADR register
 
-        call    GetEEWord   ; get EEADRH:EEADR word in AX
+        call    GetEEDATChar    ; get EEADRH:EEADR word in
         call    ADDDXAX
-
 
 
 ;        ADDW    DX, AX          ;
@@ -33,7 +32,7 @@ prg_checksum
 
 ; GetEEDATChar: in AX return the EEADRH, EEADR address character
 
-GetEEWord
+GetEEDATChar
 
         BANKSEL EECON1
         bsf     EECON1, RD		; select read program memory
