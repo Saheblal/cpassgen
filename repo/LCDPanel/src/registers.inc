@@ -60,9 +60,8 @@ LODSW	macro	REGISTER
 			endm
 
 DECW	macro	REGISTER
-	movlw	0x01
-	subwf	REGISTER, F
-	btfss	STATUS, C
+	decf	REGISTER, F
+	btfsc	STATUS, Z
 	decf	REGISTER + 1
 			endm
 
@@ -70,7 +69,7 @@ INCW	macro	REGISTER
 	incf	REGISTER
 	btfsc	STATUS, Z
 	incf	REGISTER + 1
-			endm
+        endm
 
 ISNULLW	macro	REGISTER
 	movfw	REGISTER

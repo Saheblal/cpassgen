@@ -15,21 +15,25 @@ prg_checksum
         BANKSEL EECON1
         bsf     EECON1,EEPGD	; select program memory
 
+next_word
     banksel EEADRH
         movfw   BH
         movwf   EEADRH
         movfw   BL
         movwf   EEADR       ; mov start address onto EEADRH:EEADR register
 
+
         call    GetEEWord   ; get EEADRH:EEADR word in AX
         call    ADDDXAX
 
+        INCW    BX          ; next memory word address
+        DECW    CX          ; decrement loop counter
 
+        btfss   STATUS, Z   ;
+        goto    next_word
+        return
 
 ;        ADDW    DX, AX          ;
-
-
-    return
 
 ; GetEEDATChar: in AX return the EEADRH, EEADR address character
 
@@ -42,11 +46,9 @@ GetEEWord
         BANKSEL	EEDATH
         movfw   EEDATH
         movwf	AH
-        BANKSEL EEDATA			;
         movfw   EEDATA
-        movfw   AL
-
-    return
+        movwf   AL
+        return
 
 ; ******************************** PRG_EEM_TEST *****************************
 ; test program memory crc sum CL: program size of 0xFF bytes AH:AL CRC sum **

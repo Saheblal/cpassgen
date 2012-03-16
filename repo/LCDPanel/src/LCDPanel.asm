@@ -66,10 +66,11 @@ PRINTBUF        res     10
 
 STARTUP	CODE
 
-        ORG     0x0000
-        xorlw   0xFF
-        dw      0xFFF6
-        db      0xF4
+;        ORG     0x0000
+;        db      0x001, 0x002
+;        xorlw   0xFF
+;        dw      0xFFF6
+;        db      0xF4
 
 
 	ORG	0x0003
@@ -82,7 +83,7 @@ STARTUP	CODE
 PROG1	CODE
 
 
-Cold_Start
+;Cold_Start
 
 ;        MOVWLW  CL, 0x3F        ; tested program lenght in 0x0FF bytes block's
 ;        call    PRG_EEM_TEST
@@ -113,12 +114,16 @@ Init_Program			; program initialisation
 	call	XLCDL2home
 ;	mXLCDSendMsg	TEST_MSG
 
+
 	mXLCDSendMsg	PRG_EEM
-        MOVWLW  CX, 0x1234      ; tested program lenght in 0x0FF bytes block's
+
+Cold_Start
+
+        MOVWLW  CX, 0x0001      ; tested program lenght in 0x0FF bytes block's
 #ifdef  BOOTLOADER              ; if defined BOOTLOADER, the firsr 3 bytes contain
                                 ; the jump code
         MOVWLW  DX, 0x5EF3      ; mov checksum those first 3 bytes
-        MOVWLW  BX, 0x0003      ; set start address
+        MOVWLW  BX, 0x0000      ; set start address
 #else
         CLRWREG DX
         CLRWREG BX
