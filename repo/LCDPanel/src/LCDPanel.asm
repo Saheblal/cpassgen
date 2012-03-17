@@ -68,12 +68,8 @@ STARTUP	CODE
 
 #ifndef BOOTLOADER
         ORG     0x0000
-        dw  0x3FFF, 0x3FFF
+        dw  0x3FFF, 0x3FFF, 0x3FFF
 #endif
-;        xorlw   0xFF
-;        dw      0xFFF6
-;        db      0xF4
-
 
 	ORG	0x0003
 
@@ -121,7 +117,9 @@ Init_Program			; program initialisation
 
 Cold_Start
 
-        MOVWLW  CX, 0x0002      ; tested program lenght in 0x0FF bytes block's
+        MOVWLW  CX, 0x05D7      ; tested program lenght
+;        MOVWLW  CX, 0x0008      ; tested program lenght
+
 #ifdef  BOOTLOADER              ; if defined BOOTLOADER, the firsr 3 bytes contain
                                 ; the jump code
         MOVWLW  DX, 0x5EF3      ; mov checksum those first 3 bytes
