@@ -1,4 +1,6 @@
-#!/bin/sh
 
-hexmate -CK=0-1FFF@2000w2 dist/default/production/MASZAT-II.production.hex -LOGFILE=output.log -OMASZATCRC.HEX -ADDRESSING=2 -FILL=0000@0003-1FFF
-#hexmate -LOGFILE=output.log
+#!/bin/sh
+# HEXMATE program for checksum calculation, and stored in HEX file
+
+hexmate LCDPanel.production.hex -CK=0-1@1000w2g2 -LOGFILE=log.txt -Ofile.hex -ADDRESSING=2
+
