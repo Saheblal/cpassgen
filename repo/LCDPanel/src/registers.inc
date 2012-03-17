@@ -60,10 +60,11 @@ LODSW	macro	REGISTER
 			endm
 
 DECW	macro	REGISTER
-	decf	REGISTER, F
+        movf    REGISTER
 	btfsc	STATUS, Z
-	decf	REGISTER + 1
-			endm
+       	decf	REGISTER + 1, F
+        decf    REGISTER
+	endm
 
 INCW	macro	REGISTER
 	incf	REGISTER
