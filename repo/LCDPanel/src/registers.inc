@@ -60,9 +60,9 @@ LODSW	macro	REGISTER
 			endm
 
 DECW	macro	REGISTER
-        movf    REGISTER
-	btfsc	STATUS, Z
-       	decf	REGISTER + 1, F
+        movf    REGISTER        ; LSB is null ?
+	btfsc	STATUS, Z       ; if is, 
+       	decf	REGISTER + 1, F ; then decrement MSB too
         decf    REGISTER
 	endm
 
@@ -75,7 +75,7 @@ INCW	macro	REGISTER
 ISNULLW	macro	REGISTER
 	movfw	REGISTER
 	iorwf	REGISTER + 1, W
-			endm
+	endm
 
 NEGW	macro	REGISTER
 	movlw	REGISTER
