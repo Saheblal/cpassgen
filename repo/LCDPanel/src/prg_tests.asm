@@ -28,6 +28,7 @@ next_word
 
         INCW    BX          ; next memory word address
         DECW    CX          ; decrement loop counter
+        ISNULLW CX          ; loop end?
 
         btfss   STATUS, Z   ;
         goto    next_word
