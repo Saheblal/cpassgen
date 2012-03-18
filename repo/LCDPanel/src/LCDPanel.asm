@@ -117,8 +117,8 @@ Init_Program			; program initialisation
 
 Cold_Start
 
-        MOVWLW  CX, 0x101       ; tested program lenght
-;        MOVWLW  CX, 0x0008     ; tested program lenght
+;        MOVWLW  CX, 0x05DC      ; tested program lenght
+        MOVWLW  CX, 0x014B     ; tested program lenght
 
 #ifdef  BOOTLOADER              ; if defined BOOTLOADER, the firsr 3 bytes contain
                                 ; the jump code
