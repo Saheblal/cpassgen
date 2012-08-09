@@ -1,3 +1,16 @@
+
+#include <proc/p32mx460f512l.h>
+
+struct {
+bool TFT_RST : 1;
+unsigned : 6;
+unsigned hi : 1;
+} TFT_DataPort;
+
+/*#define TFT_DataPort PORTE
+#define TFT_RST PORTC, 1
+#define TFT_RS  PORTB, 15*/
+
 // TFT module connections
 char TFT_DataPort at LATE;
 sbit TFT_RST at LATC1_bit;
@@ -20,6 +33,7 @@ void PMPWaitBusy() {
 }
 
 void Set_Index(unsigned short index) {
+    TRISE = 0;
   TFT_RS = 0;
   PMDIN = index;
   PMPWaitBusy();
