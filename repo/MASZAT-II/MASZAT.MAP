@@ -1,5 +1,5 @@
-MPLINK 4.40, Linker
-Linker Map File - Created Sun Mar  4 15:48:51 2012
+MPLINK 4.43, Linker
+Linker Map File - Created Fri Oct 26 18:14:17 2012
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -34,403 +34,403 @@ Linker Map File - Created Sun Mar  4 15:48:51 2012
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                  ADDAXBX   0x00050d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                  ADD_CRC   0x000575    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/crc.asm
-                 AddCrcB1   0x000575    program     static /home/bekeband/MPLABXProjects/MASZAT-II/crc.asm
-                BAUD_CODE   0x00210e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           BAUD_DIV_TABLE   0x002108    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           BAUD_NUM_TABLE   0x000223    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 CRANKMET   0x0001a9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               Cold_Start   0x000005    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    Copy1   0x00036f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               CopyRxToTx   0x00036c    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 DATA_EEM   0x0001e7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           DATA_EEM_ERROR   0x0000e3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            DATA_EEM_TEST   0x000110    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 DATA_SRM   0x0001f3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           DATA_SRM_ERROR   0x0000e2    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 DELAY500   0x000193    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-         EEPROM_CHK_ERROR   0x000171    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 END_TEST   0x000133    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ER_MSG   0x0001a6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   EndInt   0x00028e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 End_Test   0x00006d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  ErrFERR   0x00027d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  ErrOERR   0x00027a    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-            ErrRxBufEmpty   0x000366    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             ErrRxBufFull   0x000334    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                ErrRxOver   0x00027f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-            ErrTxBufEmpty   0x000348    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             ErrTxBufFull   0x000319    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             GET_HEX_CHAR   0x00056d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                  GetData   0x00026b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             GetNextBlock   0x000141    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              GetNextChar   0x000144    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              GetRxBuffer   0x000349    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              GetTxBuffer   0x000335    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-          Get_EEPROM_Byte   0x000173    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             INIT_PROGRAM   0x0001b8    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              INIT_SERIAL   0x00020b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               INT_TO_BCD   0x0004d9    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 InButton   0x000097    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             InitRxBuffer   0x0002f4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             InitTxBuffer   0x0002ec    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             Init_Program   0x000014    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            InterruptCode   0x00024d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 MainLoop   0x00006e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              NEGATE_WORD   0x000514    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-           NEXT_IND_PAGES   0x00011b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             Next_RAM_Loc   0x00011e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-          Next_RAM_Loc_01   0x000128    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   OK_MSG   0x0001a3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  PDT_RAM   0x0001db    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            PDT_RAM_ERROR   0x0000e4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             PDT_RAM_TEST   0x00011a    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               PORTS_INIT   0x0000ba    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  PRG_EEM   0x0001cf    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            PRG_EEM_ERROR   0x0000e5    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             PRG_EEM_TEST   0x000139    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                PRINT_BCD   0x000520    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                PRINT_BIN   0x00054f    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                PRINT_HEX   0x00055d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               PUT_ER_MSG   0x0000f1    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               PUT_OK_MSG   0x0000ff    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  PutDat1   0x00028c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  PutData   0x000284    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              PutRxBuffer   0x00031f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              PutTxBuffer   0x0002fc    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-          Put_EEPROM_Byte   0x00017e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                RAM_ERROR   0x000136    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             RestorePorts   0x0002b0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             RestorePorts   0x0000dc    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             RestoreTRISD   0x0000d2    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   SERIAL   0x0001ff    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             SERIAL_ERROR   0x0000e1    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              SERIAL_TEST   0x00010d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              STOP_SERIAL   0x000217    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  SUBAXBX   0x00050b    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                SavePorts   0x0002ab    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                SavePorts   0x0000d7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                SaveTRISD   0x0000cd    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              SendNxtChar   0x00049e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-          SendNxtChar_001   0x0004b0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              SetupSerial   0x0002d6    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              SetupTimer1   0x0002bc    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              Start_Tests   0x000007    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               StopSerial   0x0002b5    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 TEST_MSG   0x0001c9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                TimerTick   0x000299    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              WORD_TO_BCD   0x0004ba    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                XLCDClear   0x00045f    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              XLCDCommand   0x0003cf    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-      XLCDCommandInit4bit   0x000444    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                XLCDDelay   0x000480    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDDelay100us   0x000470    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-             XLCDDelay5ms   0x000465    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                 XLCDInit   0x000381    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDIsBusy   0x000400    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDL1home   0x000459    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDL2home   0x00045c    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-            XLCDLoopStart   0x000489    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                  XLCDPut   0x0003eb    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-             XLCDReadData   0x000426    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDReturnHome   0x000462    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              XLCDSendMsg   0x00049b    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDSendMsgRAM   0x0004af    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         XLCDSetCursorPos   0x0004b7    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               _Loop100us   0x00047b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                _Loop5ms1   0x00046b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              _PROG1_017C   0x000181    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_0197   0x00019c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_0199   0x00019e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_019B   0x0001a0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           _XLCDCODE_00EB   0x00046c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_00F4   0x000475    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_00FB   0x00047c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_010D   0x00048e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_0116   0x000497    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         _XLCDCommandInit   0x0003d7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         _XLCDCommandMode   0x0003d9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-        _XLCDCommandStart   0x0003da    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDDelayLoop   0x000484    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-          _XLCDDelayLoop1   0x000496    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-       _XLCDIsBusyInitret   0x000421    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-      _XLCDReadBusyRepeat   0x000402    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                adjBCD_01   0x0004fc    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                adjDEC_00   0x0004d0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                adjDEC_01   0x0004f4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-            button_change   0x000075    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-         button_no_change   0x000092    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              exit_errors   0x0000e5    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 inf_loop   0x000039    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 jump_003   0x000524    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                   loop16   0x0004c4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                   loop17   0x0004e6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 neg_data   0x000507    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 negative   0x000549    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 next_bit   0x000552    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-             next_word_01   0x000112    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               print_loop   0x000527    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-         print_low_nibble   0x000535    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               return_000   0x0004c4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               return_001   0x0004e6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 set_port   0x00007d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    t1_on   0x00007e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW0   0x00002a       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW1   0x00002c       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW2   0x00002e       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW3   0x000030       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCaHI   0x000034       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCaLO   0x000032       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCbHI   0x000036       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCbLO   0x000035       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                       AH   0x000071       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       AL   0x000070       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       AX   0x000070       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BH   0x000073       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BL   0x000072       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BX   0x000072       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-               BufferData   0x000060       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  Buttons   0x000024       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  Buttons   0x000065       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              Buttons_old   0x000023       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                       CH   0x000075       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                 CHECKSUM   0x000028       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                       CL   0x000074       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       CX   0x000074       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DH   0x000077       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DI   0x00007a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      DIH   0x00007b       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      DIL   0x00007a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DL   0x000076       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DX   0x000076       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                   Delay1   0x000020       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   Delay2   0x000021       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   Delay3   0x000022       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    Flags   0x00005e       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               MENU_LEVEL   0x000027       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   OUTBUF   0x000037       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                PORTD_BUF   0x000066       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                PORTD_BUF   0x000025       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 PRINTBUF   0x000047       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 RxEndPtr   0x000064       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               RxStartPtr   0x000063       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                       SI   0x000078       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      SIH   0x000079       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      SIL   0x000078       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                 TIMER_ON   0x000067       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                TRISD_BUF   0x000026       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 TempData   0x00005f       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 TxEndPtr   0x000062       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               TxStartPtr   0x000061       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             _vXLCDStatus   0x00005d       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg1   0x000057       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg2   0x000058       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg3   0x000059       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg4   0x00005a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-              _vXLCDtemp1   0x00005b       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-              _vXLCDtemp2   0x00005c       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
+                  ADDAXBX   0x00050d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                  ADD_CRC   0x000575    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\crc.asm
+                 AddCrcB1   0x000575    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\crc.asm
+                BAUD_CODE   0x00210e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           BAUD_DIV_TABLE   0x002108    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           BAUD_NUM_TABLE   0x000223    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 CRANKMET   0x0001a9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               Cold_Start   0x000005    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    Copy1   0x00036f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               CopyRxToTx   0x00036c    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 DATA_EEM   0x0001e7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           DATA_EEM_ERROR   0x0000e3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            DATA_EEM_TEST   0x000110    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 DATA_SRM   0x0001f3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           DATA_SRM_ERROR   0x0000e2    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 DELAY500   0x000193    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+         EEPROM_CHK_ERROR   0x000171    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 END_TEST   0x000133    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ER_MSG   0x0001a6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   EndInt   0x00028e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 End_Test   0x00006d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  ErrFERR   0x00027d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  ErrOERR   0x00027a    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+            ErrRxBufEmpty   0x000366    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             ErrRxBufFull   0x000334    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                ErrRxOver   0x00027f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+            ErrTxBufEmpty   0x000348    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             ErrTxBufFull   0x000319    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             GET_HEX_CHAR   0x00056d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                  GetData   0x00026b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             GetNextBlock   0x000141    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              GetNextChar   0x000144    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              GetRxBuffer   0x000349    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              GetTxBuffer   0x000335    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+          Get_EEPROM_Byte   0x000173    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             INIT_PROGRAM   0x0001b8    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              INIT_SERIAL   0x00020b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               INT_TO_BCD   0x0004d9    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 InButton   0x000097    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             InitRxBuffer   0x0002f4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             InitTxBuffer   0x0002ec    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             Init_Program   0x000014    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            InterruptCode   0x00024d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 MainLoop   0x00006e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              NEGATE_WORD   0x000514    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+           NEXT_IND_PAGES   0x00011b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             Next_RAM_Loc   0x00011e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+          Next_RAM_Loc_01   0x000128    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   OK_MSG   0x0001a3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  PDT_RAM   0x0001db    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            PDT_RAM_ERROR   0x0000e4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             PDT_RAM_TEST   0x00011a    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               PORTS_INIT   0x0000ba    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  PRG_EEM   0x0001cf    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            PRG_EEM_ERROR   0x0000e5    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             PRG_EEM_TEST   0x000139    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                PRINT_BCD   0x000520    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                PRINT_BIN   0x00054f    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                PRINT_HEX   0x00055d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               PUT_ER_MSG   0x0000f1    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               PUT_OK_MSG   0x0000ff    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  PutDat1   0x00028c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  PutData   0x000284    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              PutRxBuffer   0x00031f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              PutTxBuffer   0x0002fc    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+          Put_EEPROM_Byte   0x00017e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                RAM_ERROR   0x000136    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             RestorePorts   0x0002b0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             RestorePorts   0x0000dc    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             RestoreTRISD   0x0000d2    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   SERIAL   0x0001ff    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             SERIAL_ERROR   0x0000e1    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              SERIAL_TEST   0x00010d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              STOP_SERIAL   0x000217    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  SUBAXBX   0x00050b    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                SavePorts   0x0002ab    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                SavePorts   0x0000d7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                SaveTRISD   0x0000cd    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              SendNxtChar   0x00049e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+          SendNxtChar_001   0x0004b0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              SetupSerial   0x0002d6    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              SetupTimer1   0x0002bc    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              Start_Tests   0x000007    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               StopSerial   0x0002b5    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 TEST_MSG   0x0001c9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                TimerTick   0x000299    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              WORD_TO_BCD   0x0004ba    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                XLCDClear   0x00045f    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              XLCDCommand   0x0003cf    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+      XLCDCommandInit4bit   0x000444    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                XLCDDelay   0x000480    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDDelay100us   0x000470    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+             XLCDDelay5ms   0x000465    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                 XLCDInit   0x000381    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDIsBusy   0x000400    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDL1home   0x000459    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDL2home   0x00045c    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+            XLCDLoopStart   0x000489    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                  XLCDPut   0x0003eb    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+             XLCDReadData   0x000426    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDReturnHome   0x000462    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              XLCDSendMsg   0x00049b    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDSendMsgRAM   0x0004af    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         XLCDSetCursorPos   0x0004b7    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               _Loop100us   0x00047b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                _Loop5ms1   0x00046b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              _PROG1_017C   0x000181    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_0197   0x00019c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_0199   0x00019e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_019B   0x0001a0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           _XLCDCODE_00EB   0x00046c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_00F4   0x000475    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_00FB   0x00047c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_010D   0x00048e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_0116   0x000497    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         _XLCDCommandInit   0x0003d7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         _XLCDCommandMode   0x0003d9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+        _XLCDCommandStart   0x0003da    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDDelayLoop   0x000484    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+          _XLCDDelayLoop1   0x000496    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+       _XLCDIsBusyInitret   0x000421    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+      _XLCDReadBusyRepeat   0x000402    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                adjBCD_01   0x0004fc    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                adjDEC_00   0x0004d0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                adjDEC_01   0x0004f4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+            button_change   0x000075    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+         button_no_change   0x000092    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              exit_errors   0x0000e5    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 inf_loop   0x000039    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 jump_003   0x000524    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                   loop16   0x0004c4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                   loop17   0x0004e6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 neg_data   0x000507    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 negative   0x000549    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 next_bit   0x000552    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+             next_word_01   0x000112    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               print_loop   0x000527    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+         print_low_nibble   0x000535    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               return_000   0x0004c4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               return_001   0x0004e6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 set_port   0x00007d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    t1_on   0x00007e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW0   0x00002a       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW1   0x00002c       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW2   0x00002e       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW3   0x000030       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCaHI   0x000034       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCaLO   0x000032       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCbHI   0x000036       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCbLO   0x000035       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                       AH   0x000071       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       AL   0x000070       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       AX   0x000070       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BH   0x000073       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BL   0x000072       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BX   0x000072       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+               BufferData   0x000060       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  Buttons   0x000024       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  Buttons   0x000065       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              Buttons_old   0x000023       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                       CH   0x000075       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                 CHECKSUM   0x000028       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                       CL   0x000074       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       CX   0x000074       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DH   0x000077       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DI   0x00007a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      DIH   0x00007b       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      DIL   0x00007a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DL   0x000076       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DX   0x000076       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                   Delay1   0x000020       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   Delay2   0x000021       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   Delay3   0x000022       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    Flags   0x00005e       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               MENU_LEVEL   0x000027       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   OUTBUF   0x000037       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                PORTD_BUF   0x000066       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                PORTD_BUF   0x000025       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 PRINTBUF   0x000047       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 RxEndPtr   0x000064       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               RxStartPtr   0x000063       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                       SI   0x000078       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      SIH   0x000079       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      SIL   0x000078       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                 TIMER_ON   0x000067       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                TRISD_BUF   0x000026       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 TempData   0x00005f       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 TxEndPtr   0x000062       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               TxStartPtr   0x000061       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             _vXLCDStatus   0x00005d       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg1   0x000057       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg2   0x000058       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg3   0x000059       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg4   0x00005a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+              _vXLCDtemp1   0x00005b       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+              _vXLCDtemp2   0x00005c       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-               Cold_Start   0x000005    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              Start_Tests   0x000007    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             Init_Program   0x000014    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 inf_loop   0x000039    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 End_Test   0x00006d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 MainLoop   0x00006e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            button_change   0x000075    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 set_port   0x00007d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    t1_on   0x00007e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-         button_no_change   0x000092    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 InButton   0x000097    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               PORTS_INIT   0x0000ba    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                SaveTRISD   0x0000cd    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             RestoreTRISD   0x0000d2    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                SavePorts   0x0000d7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             RestorePorts   0x0000dc    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             SERIAL_ERROR   0x0000e1    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           DATA_SRM_ERROR   0x0000e2    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           DATA_EEM_ERROR   0x0000e3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            PDT_RAM_ERROR   0x0000e4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              exit_errors   0x0000e5    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            PRG_EEM_ERROR   0x0000e5    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               PUT_ER_MSG   0x0000f1    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               PUT_OK_MSG   0x0000ff    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              SERIAL_TEST   0x00010d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            DATA_EEM_TEST   0x000110    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             next_word_01   0x000112    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             PDT_RAM_TEST   0x00011a    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           NEXT_IND_PAGES   0x00011b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             Next_RAM_Loc   0x00011e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-          Next_RAM_Loc_01   0x000128    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 END_TEST   0x000133    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                RAM_ERROR   0x000136    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             PRG_EEM_TEST   0x000139    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             GetNextBlock   0x000141    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              GetNextChar   0x000144    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-         EEPROM_CHK_ERROR   0x000171    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-          Get_EEPROM_Byte   0x000173    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-          Put_EEPROM_Byte   0x00017e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_017C   0x000181    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 DELAY500   0x000193    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_0197   0x00019c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_0199   0x00019e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              _PROG1_019B   0x0001a0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   OK_MSG   0x0001a3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ER_MSG   0x0001a6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 CRANKMET   0x0001a9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-             INIT_PROGRAM   0x0001b8    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 TEST_MSG   0x0001c9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  PRG_EEM   0x0001cf    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  PDT_RAM   0x0001db    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 DATA_EEM   0x0001e7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 DATA_SRM   0x0001f3    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   SERIAL   0x0001ff    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              INIT_SERIAL   0x00020b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              STOP_SERIAL   0x000217    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-           BAUD_NUM_TABLE   0x000223    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-            InterruptCode   0x00024d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  GetData   0x00026b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  ErrOERR   0x00027a    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  ErrFERR   0x00027d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                ErrRxOver   0x00027f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  PutData   0x000284    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  PutDat1   0x00028c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                   EndInt   0x00028e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                TimerTick   0x000299    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                SavePorts   0x0002ab    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             RestorePorts   0x0002b0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               StopSerial   0x0002b5    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              SetupTimer1   0x0002bc    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              SetupSerial   0x0002d6    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             InitTxBuffer   0x0002ec    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             InitRxBuffer   0x0002f4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              PutTxBuffer   0x0002fc    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             ErrTxBufFull   0x000319    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              PutRxBuffer   0x00031f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-             ErrRxBufFull   0x000334    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              GetTxBuffer   0x000335    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-            ErrTxBufEmpty   0x000348    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-              GetRxBuffer   0x000349    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-            ErrRxBufEmpty   0x000366    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               CopyRxToTx   0x00036c    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                    Copy1   0x00036f    program     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 XLCDInit   0x000381    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              XLCDCommand   0x0003cf    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         _XLCDCommandInit   0x0003d7    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         _XLCDCommandMode   0x0003d9    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-        _XLCDCommandStart   0x0003da    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                  XLCDPut   0x0003eb    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDIsBusy   0x000400    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-      _XLCDReadBusyRepeat   0x000402    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-       _XLCDIsBusyInitret   0x000421    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-             XLCDReadData   0x000426    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-      XLCDCommandInit4bit   0x000444    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDL1home   0x000459    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               XLCDL2home   0x00045c    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                XLCDClear   0x00045f    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDReturnHome   0x000462    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-             XLCDDelay5ms   0x000465    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                _Loop5ms1   0x00046b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_00EB   0x00046c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDDelay100us   0x000470    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_00F4   0x000475    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-               _Loop100us   0x00047b    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_00FB   0x00047c    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-                XLCDDelay   0x000480    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDDelayLoop   0x000484    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-            XLCDLoopStart   0x000489    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_010D   0x00048e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-          _XLCDDelayLoop1   0x000496    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           _XLCDCODE_0116   0x000497    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              XLCDSendMsg   0x00049b    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              SendNxtChar   0x00049e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-           XLCDSendMsgRAM   0x0004af    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-          SendNxtChar_001   0x0004b0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-         XLCDSetCursorPos   0x0004b7    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/16XLCD.asm
-              WORD_TO_BCD   0x0004ba    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               return_000   0x0004c4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                   loop16   0x0004c4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                adjDEC_00   0x0004d0    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               INT_TO_BCD   0x0004d9    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               return_001   0x0004e6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                   loop17   0x0004e6    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                adjDEC_01   0x0004f4    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                adjBCD_01   0x0004fc    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 neg_data   0x000507    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                  SUBAXBX   0x00050b    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                  ADDAXBX   0x00050d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-              NEGATE_WORD   0x000514    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                PRINT_BCD   0x000520    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 jump_003   0x000524    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-               print_loop   0x000527    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-         print_low_nibble   0x000535    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 negative   0x000549    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                PRINT_BIN   0x00054f    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 next_bit   0x000552    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                PRINT_HEX   0x00055d    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-             GET_HEX_CHAR   0x00056d    program     static /home/bekeband/MPLABXProjects/MASZAT-II/MATHS.ASM
-                 AddCrcB1   0x000575    program     static /home/bekeband/MPLABXProjects/MASZAT-II/crc.asm
-                  ADD_CRC   0x000575    program     extern /home/bekeband/MPLABXProjects/MASZAT-II/crc.asm
-           BAUD_DIV_TABLE   0x002108    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                BAUD_CODE   0x00210e    program     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   Delay1   0x000020       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   Delay2   0x000021       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   Delay3   0x000022       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-              Buttons_old   0x000023       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                  Buttons   0x000024       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                PORTD_BUF   0x000025       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                TRISD_BUF   0x000026       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               MENU_LEVEL   0x000027       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 CHECKSUM   0x000028       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW0   0x00002a       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW1   0x00002c       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW2   0x00002e       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                    ACCW3   0x000030       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCaLO   0x000032       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCaHI   0x000034       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCbLO   0x000035       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   ACCbHI   0x000036       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                   OUTBUF   0x000037       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-                 PRINTBUF   0x000047       data     static /home/bekeband/MPLABXProjects/MASZAT-II/RALLY_001.ASM
-               _vXLCDreg1   0x000057       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg2   0x000058       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg3   0x000059       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-               _vXLCDreg4   0x00005a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-              _vXLCDtemp1   0x00005b       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-              _vXLCDtemp2   0x00005c       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-             _vXLCDStatus   0x00005d       data     static /home/bekeband/MPLABXProjects/MASZAT-II/XLCD.ASM
-                    Flags   0x00005e       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 TempData   0x00005f       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               BufferData   0x000060       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               TxStartPtr   0x000061       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 TxEndPtr   0x000062       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-               RxStartPtr   0x000063       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 RxEndPtr   0x000064       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                  Buttons   0x000065       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                PORTD_BUF   0x000066       data     static /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                 TIMER_ON   0x000067       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/UART.asm
-                       AX   0x000070       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       AL   0x000070       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       AH   0x000071       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BL   0x000072       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BX   0x000072       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       BH   0x000073       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       CL   0x000074       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       CX   0x000074       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       CH   0x000075       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DX   0x000076       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DL   0x000076       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DH   0x000077       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      SIL   0x000078       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       SI   0x000078       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      SIH   0x000079       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                       DI   0x00007a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      DIL   0x00007a       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
-                      DIH   0x00007b       data     extern /home/bekeband/MPLABXProjects/MASZAT-II/registers.asm
+               Cold_Start   0x000005    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              Start_Tests   0x000007    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             Init_Program   0x000014    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 inf_loop   0x000039    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 End_Test   0x00006d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 MainLoop   0x00006e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            button_change   0x000075    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 set_port   0x00007d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    t1_on   0x00007e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+         button_no_change   0x000092    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 InButton   0x000097    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               PORTS_INIT   0x0000ba    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                SaveTRISD   0x0000cd    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             RestoreTRISD   0x0000d2    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                SavePorts   0x0000d7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             RestorePorts   0x0000dc    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             SERIAL_ERROR   0x0000e1    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           DATA_SRM_ERROR   0x0000e2    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           DATA_EEM_ERROR   0x0000e3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            PDT_RAM_ERROR   0x0000e4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              exit_errors   0x0000e5    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            PRG_EEM_ERROR   0x0000e5    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               PUT_ER_MSG   0x0000f1    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               PUT_OK_MSG   0x0000ff    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              SERIAL_TEST   0x00010d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            DATA_EEM_TEST   0x000110    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             next_word_01   0x000112    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             PDT_RAM_TEST   0x00011a    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           NEXT_IND_PAGES   0x00011b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             Next_RAM_Loc   0x00011e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+          Next_RAM_Loc_01   0x000128    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 END_TEST   0x000133    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                RAM_ERROR   0x000136    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             PRG_EEM_TEST   0x000139    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             GetNextBlock   0x000141    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              GetNextChar   0x000144    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+         EEPROM_CHK_ERROR   0x000171    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+          Get_EEPROM_Byte   0x000173    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+          Put_EEPROM_Byte   0x00017e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_017C   0x000181    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 DELAY500   0x000193    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_0197   0x00019c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_0199   0x00019e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              _PROG1_019B   0x0001a0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   OK_MSG   0x0001a3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ER_MSG   0x0001a6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 CRANKMET   0x0001a9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+             INIT_PROGRAM   0x0001b8    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 TEST_MSG   0x0001c9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  PRG_EEM   0x0001cf    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  PDT_RAM   0x0001db    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 DATA_EEM   0x0001e7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 DATA_SRM   0x0001f3    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   SERIAL   0x0001ff    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              INIT_SERIAL   0x00020b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              STOP_SERIAL   0x000217    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+           BAUD_NUM_TABLE   0x000223    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+            InterruptCode   0x00024d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  GetData   0x00026b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  ErrOERR   0x00027a    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  ErrFERR   0x00027d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                ErrRxOver   0x00027f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  PutData   0x000284    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  PutDat1   0x00028c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                   EndInt   0x00028e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                TimerTick   0x000299    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                SavePorts   0x0002ab    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             RestorePorts   0x0002b0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               StopSerial   0x0002b5    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              SetupTimer1   0x0002bc    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              SetupSerial   0x0002d6    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             InitTxBuffer   0x0002ec    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             InitRxBuffer   0x0002f4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              PutTxBuffer   0x0002fc    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             ErrTxBufFull   0x000319    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              PutRxBuffer   0x00031f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+             ErrRxBufFull   0x000334    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              GetTxBuffer   0x000335    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+            ErrTxBufEmpty   0x000348    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+              GetRxBuffer   0x000349    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+            ErrRxBufEmpty   0x000366    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               CopyRxToTx   0x00036c    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                    Copy1   0x00036f    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 XLCDInit   0x000381    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              XLCDCommand   0x0003cf    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         _XLCDCommandInit   0x0003d7    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         _XLCDCommandMode   0x0003d9    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+        _XLCDCommandStart   0x0003da    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                  XLCDPut   0x0003eb    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDIsBusy   0x000400    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+      _XLCDReadBusyRepeat   0x000402    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+       _XLCDIsBusyInitret   0x000421    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+             XLCDReadData   0x000426    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+      XLCDCommandInit4bit   0x000444    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDL1home   0x000459    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               XLCDL2home   0x00045c    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                XLCDClear   0x00045f    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDReturnHome   0x000462    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+             XLCDDelay5ms   0x000465    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                _Loop5ms1   0x00046b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_00EB   0x00046c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDDelay100us   0x000470    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_00F4   0x000475    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+               _Loop100us   0x00047b    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_00FB   0x00047c    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+                XLCDDelay   0x000480    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDDelayLoop   0x000484    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+            XLCDLoopStart   0x000489    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_010D   0x00048e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+          _XLCDDelayLoop1   0x000496    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           _XLCDCODE_0116   0x000497    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              XLCDSendMsg   0x00049b    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              SendNxtChar   0x00049e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+           XLCDSendMsgRAM   0x0004af    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+          SendNxtChar_001   0x0004b0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+         XLCDSetCursorPos   0x0004b7    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\16XLCD.asm
+              WORD_TO_BCD   0x0004ba    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               return_000   0x0004c4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                   loop16   0x0004c4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                adjDEC_00   0x0004d0    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               INT_TO_BCD   0x0004d9    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               return_001   0x0004e6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                   loop17   0x0004e6    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                adjDEC_01   0x0004f4    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                adjBCD_01   0x0004fc    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 neg_data   0x000507    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                  SUBAXBX   0x00050b    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                  ADDAXBX   0x00050d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+              NEGATE_WORD   0x000514    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                PRINT_BCD   0x000520    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 jump_003   0x000524    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+               print_loop   0x000527    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+         print_low_nibble   0x000535    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 negative   0x000549    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                PRINT_BIN   0x00054f    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 next_bit   0x000552    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                PRINT_HEX   0x00055d    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+             GET_HEX_CHAR   0x00056d    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\MATHS.ASM
+                 AddCrcB1   0x000575    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\crc.asm
+                  ADD_CRC   0x000575    program     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\crc.asm
+           BAUD_DIV_TABLE   0x002108    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                BAUD_CODE   0x00210e    program     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   Delay1   0x000020       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   Delay2   0x000021       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   Delay3   0x000022       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+              Buttons_old   0x000023       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                  Buttons   0x000024       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                PORTD_BUF   0x000025       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                TRISD_BUF   0x000026       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               MENU_LEVEL   0x000027       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 CHECKSUM   0x000028       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW0   0x00002a       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW1   0x00002c       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW2   0x00002e       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                    ACCW3   0x000030       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCaLO   0x000032       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCaHI   0x000034       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCbLO   0x000035       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   ACCbHI   0x000036       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                   OUTBUF   0x000037       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+                 PRINTBUF   0x000047       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\RALLY_001.ASM
+               _vXLCDreg1   0x000057       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg2   0x000058       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg3   0x000059       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+               _vXLCDreg4   0x00005a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+              _vXLCDtemp1   0x00005b       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+              _vXLCDtemp2   0x00005c       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+             _vXLCDStatus   0x00005d       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\XLCD.ASM
+                    Flags   0x00005e       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 TempData   0x00005f       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               BufferData   0x000060       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               TxStartPtr   0x000061       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 TxEndPtr   0x000062       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+               RxStartPtr   0x000063       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 RxEndPtr   0x000064       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                  Buttons   0x000065       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                PORTD_BUF   0x000066       data     static C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                 TIMER_ON   0x000067       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\UART.asm
+                       AX   0x000070       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       AL   0x000070       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       AH   0x000071       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BL   0x000072       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BX   0x000072       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       BH   0x000073       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       CL   0x000074       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       CX   0x000074       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       CH   0x000075       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DX   0x000076       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DL   0x000076       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DH   0x000077       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      SIL   0x000078       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       SI   0x000078       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      SIH   0x000079       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                       DI   0x00007a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      DIL   0x00007a       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
+                      DIH   0x00007b       data     extern C:\Documents and Settings\Bandi\MPLABXProjects\MASZAT-II\MASZAT-II\registers.asm
 
 
