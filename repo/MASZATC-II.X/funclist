@@ -1,0 +1,7 @@
+_ConfigureOscillator: CODE, 160 0 1
+_main: CODE, 21 0 42
+_DelayMs: CODE, 63 0 38
+_InitApp: CODE, 147 0 9
+_isr: CODE, 136 0 11
+_Delay: CODE, 101 0 35
+Total: 136
