@@ -8,10 +8,19 @@
 
 #include "system.h"         /* System funct/params, like osc/periph config    */
 #include "user.h"           /* User funct/params, such as InitApp             */
+#include "graphics/Gol.h"
+#include "graphics/DisplayDriver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//                            FONTS USED
+/////////////////////////////////////////////////////////////////////////////
+extern const FONT_FLASH     Gentium_16;
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
+
+GOL_SCHEME      *demoScheme;                // alternative style scheme
 
 /////////////////////////////////////////////////////////////////////////////
 // Function: WORD GOLMsgCallback(WORD objMsg, OBJ_HEADER* pObj, GOL_MSG* pMsg)
@@ -37,7 +46,7 @@ WORD            GOLMsgCallback(WORD objMsg, OBJ_HEADER *pObj, GOL_MSG *pMsg)
 
 //           this function returns zero.
 /////////////////////////////////////////////////////////////////////////////
-uint GOLDrawCallback(void)
+WORD GOLDrawCallback(void)
 {
     return (1);
 }
@@ -50,6 +59,8 @@ uint GOLDrawCallback(void)
 
 int32_t main(void)
 {
+
+    GOL_MSG msg;                    // GOL message structure to interact with GOL
 
 #ifndef PIC32_STARTER_KIT
     /*The JTAG is on by default on POR.  A PIC32 Starter Kit uses the JTAG, but
@@ -79,18 +90,37 @@ int32_t main(void)
     /* Initialize I/O and Peripherals for application */
     InitApp();
 
-    /*Configure Multivector Interrupt Mode.  Using Single Vector Mode
-    is expensive from a timing perspective, so most applications
-    should probably not use a Single Vector Mode*/
-//    INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
+    DisplayBacklightOn();
+
+    SetColor(CYAN);
+    ClearDevice();
+
+    _pDefaultGolScheme = NULL;
+
+ /*   demoScheme = GOLCreateScheme();  // create alternative style scheme
+    if (demoScheme)
+    {
+        demoScheme->TextColor0 = BRIGHTBLUE;
+        demoScheme->TextColor1 = BRIGHTRED;
+        demoScheme->pFont = (void*)&Gentium_16;
+    } else
+    {
+        DisplayBacklightOff();
+    };*/
+
+//    SPITest();
+
+//#if defined WANT_GOL_INIT
+//#endif
+
 
     /* TODO <INSERT USER APPLICATION CODE HERE> */
 
     while(1)
     {
-        Delay10usec(500000);
+/*        Delay10us(50000);
         DisplayBacklightOn();
-        Delay10usec(500000);
-        DisplayBacklightOff();
+        Delay10us(50000);
+        DisplayBacklightOff();*/
     }
 }

@@ -41,11 +41,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/configuration_bits.o.d ${OBJECTDIR}/exceptions.o.d ${OBJECTDIR}/interrupts.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/system.o.d ${OBJECTDIR}/user.o.d ${OBJECTDIR}/src/graphics/GOL.o.d ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d ${OBJECTDIR}/src/graphics/Primitive.o.d ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/src/graphics/GOL.o.d ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d ${OBJECTDIR}/src/graphics/Primitive.o.d ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d ${OBJECTDIR}/configuration_bits.o.d ${OBJECTDIR}/exceptions.o.d ${OBJECTDIR}/interrupts.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/system.o.d ${OBJECTDIR}/user.o.d ${OBJECTDIR}/resources.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o
+OBJECTFILES=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o
 
 
 CFLAGS=
@@ -81,6 +81,31 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/src/graphics/GOL.o: src/graphics/GOL.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/GOL.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOL.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOL.o.d" -o ${OBJECTDIR}/src/graphics/GOL.o src/graphics/GOL.c  
+	
+${OBJECTDIR}/src/graphics/GOLFontDefault.o: src/graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLFontDefault.o src/graphics/GOLFontDefault.c  
+	
+${OBJECTDIR}/src/graphics/GOLSchemeDefault.o: src/graphics/GOLSchemeDefault.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o src/graphics/GOLSchemeDefault.c  
+	
+${OBJECTDIR}/src/graphics/Primitive.o: src/graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/Primitive.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Primitive.o.d" -o ${OBJECTDIR}/src/graphics/Primitive.o src/graphics/Primitive.c  
+	
+${OBJECTDIR}/src/graphics/Drivers/HX8347.o: src/graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics/Drivers 
+	@${RM} ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" -o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o src/graphics/Drivers/HX8347.c  
+	
 ${OBJECTDIR}/configuration_bits.o: configuration_bits.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/configuration_bits.o.d 
@@ -111,32 +136,37 @@ ${OBJECTDIR}/user.o: user.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/user.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/user.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/user.o.d" -o ${OBJECTDIR}/user.o user.c  
 	
+${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/resources.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c  
+	
+else
 ${OBJECTDIR}/src/graphics/GOL.o: src/graphics/GOL.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics 
 	@${RM} ${OBJECTDIR}/src/graphics/GOL.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOL.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOL.o.d" -o ${OBJECTDIR}/src/graphics/GOL.o src/graphics/GOL.c  
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOL.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOL.o.d" -o ${OBJECTDIR}/src/graphics/GOL.o src/graphics/GOL.c  
 	
 ${OBJECTDIR}/src/graphics/GOLFontDefault.o: src/graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics 
 	@${RM} ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLFontDefault.o src/graphics/GOLFontDefault.c  
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLFontDefault.o src/graphics/GOLFontDefault.c  
 	
 ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o: src/graphics/GOLSchemeDefault.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics 
 	@${RM} ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o src/graphics/GOLSchemeDefault.c  
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o src/graphics/GOLSchemeDefault.c  
 	
 ${OBJECTDIR}/src/graphics/Primitive.o: src/graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics 
 	@${RM} ${OBJECTDIR}/src/graphics/Primitive.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Primitive.o.d" -o ${OBJECTDIR}/src/graphics/Primitive.o src/graphics/Primitive.c  
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Primitive.o.d" -o ${OBJECTDIR}/src/graphics/Primitive.o src/graphics/Primitive.c  
 	
 ${OBJECTDIR}/src/graphics/Drivers/HX8347.o: src/graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics/Drivers 
 	@${RM} ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" -o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o src/graphics/Drivers/HX8347.c  
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" -o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o src/graphics/Drivers/HX8347.c  
 	
-else
 ${OBJECTDIR}/configuration_bits.o: configuration_bits.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/configuration_bits.o.d 
@@ -167,30 +197,10 @@ ${OBJECTDIR}/user.o: user.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/user.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/user.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/user.o.d" -o ${OBJECTDIR}/user.o user.c  
 	
-${OBJECTDIR}/src/graphics/GOL.o: src/graphics/GOL.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/src/graphics 
-	@${RM} ${OBJECTDIR}/src/graphics/GOL.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOL.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOL.o.d" -o ${OBJECTDIR}/src/graphics/GOL.o src/graphics/GOL.c  
-	
-${OBJECTDIR}/src/graphics/GOLFontDefault.o: src/graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/src/graphics 
-	@${RM} ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLFontDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLFontDefault.o src/graphics/GOLFontDefault.c  
-	
-${OBJECTDIR}/src/graphics/GOLSchemeDefault.o: src/graphics/GOLSchemeDefault.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/src/graphics 
-	@${RM} ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d" -o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o src/graphics/GOLSchemeDefault.c  
-	
-${OBJECTDIR}/src/graphics/Primitive.o: src/graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/src/graphics 
-	@${RM} ${OBJECTDIR}/src/graphics/Primitive.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Primitive.o.d" -o ${OBJECTDIR}/src/graphics/Primitive.o src/graphics/Primitive.c  
-	
-${OBJECTDIR}/src/graphics/Drivers/HX8347.o: src/graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/src/graphics/Drivers 
-	@${RM} ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d" -o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o src/graphics/Drivers/HX8347.c  
+${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/resources.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c  
 	
 endif
 
@@ -199,11 +209,11 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)    -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__MPLAB_DEBUG=1,--defsym=__ICD2RAM=1,--defsym=__DEBUG=1 
+	${MP_CC} $(MP_EXTRA_LD_PRE)    -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__MPLAB_DEBUG=1,--defsym=__ICD2RAM=1,--defsym=__DEBUG=1,--defsym=_min_heap_size=3000 
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION)
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=_min_heap_size=3000
 	${MP_CC_DIR}\\pic32-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/PIC32MTest.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  
 endif
 

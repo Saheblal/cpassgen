@@ -35,7 +35,7 @@ uint GetTimer();*/
 
 /* */
 
-uchar Delay10usec(uint);
-uchar DelayMSec(uint);
+uchar Delay10us(uint);
+uchar DelayMs(uint);
 
 #endif

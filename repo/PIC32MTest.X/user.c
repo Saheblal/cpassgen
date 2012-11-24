@@ -29,14 +29,38 @@ void InitApp(void)
 
     // set up the timer interrupt with a priority of 2
     ConfigIntTimer1(T1_INT_ON | T1_INT_PRIOR_2);
-
-
+    
     /* Zero to DELAY_COUNTER for Delay procedure. */
     StartTimer();
-
 
     /* Initialize peripherals */
 
     DisplayBacklightConfig();
+
+//#if defined WANT_GOL_INIT
+    GOLInit();
+//#endif
+    DisplayBacklightOn();
+
+// initialize the components for Resistive Touch Screen
+//#if defined WANT_TOUCH_INIT
+//    TouchInit(NULL,NULL,NULL,NULL);
+//#endif
+//    SDCARDInit();
+//    MP3Init();
+
+    /* PORT Init                                                            */
+    /* PORTD 0-3 bits inputs.                                               */
+    /* PORTA 0-1 bits outputs.                                              */
+
+    /* TODO Must be disable the JTAG port, that we are to appropriate using */
+    /* RA0, and RA1 ports.  */
+
+    DDPCONbits.JTAGEN = 0;  /* JTAG debug disabled */
+    /* TODO D port output now !!!! */
+    TRISDbits.TRISD14 = TRISDbits.TRISD15 = 0;
+        /* Port D 14, 15, pins pull up resistor enabled */
+//    CNPUEbits.CNPUE20 = CNPUEbits.CNPUE21 = 1;
+    TRISAbits.TRISA0 = TRISAbits.TRISA1 = 0;
 
 }

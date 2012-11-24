@@ -32,13 +32,13 @@ uint GetTimer()
     return DELAY_COUNTER_10USEC;
 };
 
-uchar Delay10usec(uint usec10)
+uchar Delay10us(uint usec10)
 {
     StartTimer();
     while (GetTimer() < usec10) ;
 };
 
-uchar DelayMSec(uint MSec)
+uchar DelayMs(uint MSec)
 {
     StartTimer();
     while (GetTimer() < (MSec * 100));
