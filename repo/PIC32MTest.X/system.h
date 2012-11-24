@@ -25,15 +25,14 @@ extern uint DELAY_COUNTER_MSEC;
 functions, and other non-peripheral microcontroller initialization functions
 go here. */
 
-/* StartTimer start 10usec counter 
+//  StartTimer start 10usec counter
 
 void StartTimer();
+#define ResetTimer StartTimer
 
-/* Get 10usec timer value. 
+//  Get 10usec timer value.
 
-uint GetTimer();*/
-
-/* */
+WORD GetMillisec();
 
 uchar Delay10us(uint);
 uchar DelayMs(uint);

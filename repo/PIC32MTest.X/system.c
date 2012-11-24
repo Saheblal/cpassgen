@@ -32,6 +32,11 @@ uint GetTimer()
     return DELAY_COUNTER_10USEC;
 };
 
+WORD GetMillisec()
+{
+    return (DELAY_COUNTER_10USEC / 100);
+}
+
 uchar Delay10us(uint usec10)
 {
     StartTimer();

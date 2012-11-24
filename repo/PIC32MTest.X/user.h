@@ -18,6 +18,8 @@
 #define DisplayBacklightOn()          LATAbits.LATA9    = 1
 #define DisplayBacklightOff()         LATAbits.LATA9    = 0
 
+#define ID_START_TEXT 54
+
 /******************************************************************************/
 /* User Function Prototypes                                                    /
 /******************************************************************************/

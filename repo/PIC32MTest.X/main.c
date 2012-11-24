@@ -10,17 +10,19 @@
 #include "user.h"           /* User funct/params, such as InitApp             */
 #include "graphics/Gol.h"
 #include "graphics/DisplayDriver.h"
+#include "graphics/StaticText.h"
 
 /////////////////////////////////////////////////////////////////////////////
 //                            FONTS USED
 /////////////////////////////////////////////////////////////////////////////
-extern const FONT_FLASH     Gentium_16;
+//extern const FONT_FLASH     Gentium_16;
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
 
-GOL_SCHEME      *demoScheme;                // alternative style scheme
+//GOL_SCHEME      *demoScheme;                // alternative style scheme
+STATICTEXT      *STERM;         // Static text for Start terminal
 
 /////////////////////////////////////////////////////////////////////////////
 // Function: WORD GOLMsgCallback(WORD objMsg, OBJ_HEADER* pObj, GOL_MSG* pMsg)
@@ -33,7 +35,6 @@ GOL_SCHEME      *demoScheme;                // alternative style scheme
 /////////////////////////////////////////////////////////////////////////////
 
 WORD            GOLMsgCallback(WORD objMsg, OBJ_HEADER *pObj, GOL_MSG *pMsg)
-//uint GOLMsgCallback(uint , OBJ_HEADER, GOL_MSG)
 {
     return (1);
 };
@@ -92,35 +93,40 @@ int32_t main(void)
 
     DisplayBacklightOn();
 
-    SetColor(CYAN);
+    SetColor(BLACK);
     ClearDevice();
 
-    _pDefaultGolScheme = NULL;
-
- /*   demoScheme = GOLCreateScheme();  // create alternative style scheme
-    if (demoScheme)
+    if ((STERM = (void*)InitStartTerminal()) != NULL)
     {
-        demoScheme->TextColor0 = BRIGHTBLUE;
-        demoScheme->TextColor1 = BRIGHTRED;
-        demoScheme->pFont = (void*)&Gentium_16;
-    } else
-    {
-        DisplayBacklightOff();
-    };*/
+    } else 
+    {   /* We marked the start terminau unsuccesfully with blinking the display
+         backlight LED. */
+        while (1)
+        {
+            DelayMs(500);
+            DisplayBacklightOn();
+            DelayMs(500);
+            DisplayBacklightOff();
+        };
+    }
 
 //    SPITest();
 
 //#if defined WANT_GOL_INIT
 //#endif
 
-
     /* TODO <INSERT USER APPLICATION CODE HERE> */
 
     while(1)
     {
-/*        Delay10us(50000);
-        DisplayBacklightOn();
-        Delay10us(50000);
-        DisplayBacklightOff();*/
+        if(GOLDraw())
+        {                           // Draw GOL object
+//            TouchGetMsg(&msg);      // Get message from touch screen
+            if (msg.uiEvent == EVENT_INVALID)
+            {
+//                IOGetMsg(&msg);         // Get IO Port states.
+            }
+            GOLMsg(&msg);           // Process message
+        }
     }
 }

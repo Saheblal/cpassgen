@@ -41,11 +41,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/src/graphics/GOL.o.d ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d ${OBJECTDIR}/src/graphics/Primitive.o.d ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d ${OBJECTDIR}/configuration_bits.o.d ${OBJECTDIR}/exceptions.o.d ${OBJECTDIR}/interrupts.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/system.o.d ${OBJECTDIR}/user.o.d ${OBJECTDIR}/resources.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/src/graphics/StaticText.o ${OBJECTDIR}/src/SPIFlash.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/src/graphics/GOL.o.d ${OBJECTDIR}/src/graphics/GOLFontDefault.o.d ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o.d ${OBJECTDIR}/src/graphics/Primitive.o.d ${OBJECTDIR}/src/graphics/Drivers/HX8347.o.d ${OBJECTDIR}/configuration_bits.o.d ${OBJECTDIR}/exceptions.o.d ${OBJECTDIR}/interrupts.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/system.o.d ${OBJECTDIR}/user.o.d ${OBJECTDIR}/resources.o.d ${OBJECTDIR}/src/graphics/StaticText.o.d ${OBJECTDIR}/src/SPIFlash.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o
+OBJECTFILES=${OBJECTDIR}/src/graphics/GOL.o ${OBJECTDIR}/src/graphics/GOLFontDefault.o ${OBJECTDIR}/src/graphics/GOLSchemeDefault.o ${OBJECTDIR}/src/graphics/Primitive.o ${OBJECTDIR}/src/graphics/Drivers/HX8347.o ${OBJECTDIR}/configuration_bits.o ${OBJECTDIR}/exceptions.o ${OBJECTDIR}/interrupts.o ${OBJECTDIR}/main.o ${OBJECTDIR}/system.o ${OBJECTDIR}/user.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/src/graphics/StaticText.o ${OBJECTDIR}/src/SPIFlash.o
 
 
 CFLAGS=
@@ -141,6 +141,16 @@ ${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/resources.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c  
 	
+${OBJECTDIR}/src/graphics/StaticText.o: src/graphics/StaticText.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/StaticText.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/StaticText.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/StaticText.o.d" -o ${OBJECTDIR}/src/graphics/StaticText.o src/graphics/StaticText.c  
+	
+${OBJECTDIR}/src/SPIFlash.o: src/SPIFlash.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src 
+	@${RM} ${OBJECTDIR}/src/SPIFlash.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/SPIFlash.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/SPIFlash.o.d" -o ${OBJECTDIR}/src/SPIFlash.o src/SPIFlash.c  
+	
 else
 ${OBJECTDIR}/src/graphics/GOL.o: src/graphics/GOL.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src/graphics 
@@ -201,6 +211,16 @@ ${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/resources.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c  
+	
+${OBJECTDIR}/src/graphics/StaticText.o: src/graphics/StaticText.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src/graphics 
+	@${RM} ${OBJECTDIR}/src/graphics/StaticText.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/graphics/StaticText.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/graphics/StaticText.o.d" -o ${OBJECTDIR}/src/graphics/StaticText.o src/graphics/StaticText.c  
+	
+${OBJECTDIR}/src/SPIFlash.o: src/SPIFlash.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src 
+	@${RM} ${OBJECTDIR}/src/SPIFlash.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/src/SPIFlash.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -DCFG_INCLUDE_MPLAB_X -DCFG_INCLUDE_MIKROE_PIC32_GP_SK_16PMP -DUSE_PRIMITIVE_PUTIMAGE -I"C:/Documents and Settings/Bandi/MPLABXProjects/PIC32MTest.X/includes" -MMD -MF "${OBJECTDIR}/src/SPIFlash.o.d" -o ${OBJECTDIR}/src/SPIFlash.o src/SPIFlash.c  
 	
 endif
 

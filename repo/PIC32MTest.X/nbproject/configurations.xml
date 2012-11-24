@@ -31,6 +31,8 @@
         <itemPath>src/graphics/GOLSchemeDefault.c</itemPath>
         <itemPath>src/graphics/Primitive.c</itemPath>
         <itemPath>src/graphics/Drivers/HX8347.c</itemPath>
+        <itemPath>src/graphics/StaticText.c</itemPath>
+        <itemPath>src/graphics/Window.c</itemPath>
       </logicalFolder>
       <itemPath>configuration_bits.c</itemPath>
       <itemPath>exceptions.c</itemPath>
@@ -39,6 +41,7 @@
       <itemPath>system.c</itemPath>
       <itemPath>user.c</itemPath>
       <itemPath>resources.c</itemPath>
+      <itemPath>src/SPIFlash.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -131,6 +134,8 @@
       </C32Global>
       <Simulator>
       </Simulator>
+      <item path="src/graphics/Window.c" ex="true" overriding="false">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

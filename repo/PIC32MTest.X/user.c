@@ -8,10 +8,40 @@
 #include <time.h>
 #include "user.h"            /* variables/params used by user.c               */
 #include "system.h"         /* timer functions                              */
+#include "graphics/StaticText.h"    /* Statictext for StartTerminal window. */
 
 /******************************************************************************/
 /* User Functions                                                             */
 /******************************************************************************/
+
+XCHAR TextLabel[20] = { 'S','t','a','r','t', 0};
+
+/*InitStartTerminal: initialize the start terminal view to follow the start
+ * advance for
+ * initialization.
+ * RETURN VALUE: terminal static text view.
+ * INPUT VALUE: none.
+ */
+
+STATICTEXT *InitStartTerminal(void)
+{
+    SHORT left = 0, top = 0, right = 299, bottom = 199;
+    int state = ST_DRAW | ST_FRAME | ST_CENTER_ALIGN;
+    STATICTEXT* retval;
+    retval = StCreate(ID_START_TEXT, left, top, right, bottom, state, TextLabel, _pDefaultGolScheme);
+    return retval;
+/*    if (retval)
+    {
+        if (StDraw(retval))
+        {
+//            START_TERMINAL_AVE[2] = IDENT[0] + 0x020;
+            StSetText(retval, START_TERMINAL_AVE);
+            StDraw(retval);
+        }
+        return retval;
+    };
+    return NULL;*/
+};
 
 /* TODO Initialize User Ports/Peripherals/Project here */
 
@@ -40,8 +70,13 @@ void InitApp(void)
 //#if defined WANT_GOL_INIT
     GOLInit();
 //#endif
+
+//    TouchInit(NULL,NULL,NULL,NULL);
+
     DisplayBacklightOn();
 
+    SPIFlashInit();
+    
 // initialize the components for Resistive Touch Screen
 //#if defined WANT_TOUCH_INIT
 //    TouchInit(NULL,NULL,NULL,NULL);
