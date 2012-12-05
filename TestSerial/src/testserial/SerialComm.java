@@ -9,10 +9,6 @@
  * A time of {@link chartime} is determine the one char's sending time. 
  * This depending the baud rate, and total bitnumber. 
  * The (@link timeout} will be calculate of this value.
- * 
- * 
- * 
- * 
  * @author Beke András (beke.andras.mkolc@gmail.com)
  * Thanks for Raphael Blatter (raphael@blatter.sg)
  * @author heavily using code examples from the RXTX-website (rxtx.qbang.org)
@@ -29,12 +25,7 @@ import java.util.*;
 
 
 public class SerialComm extends Thread {
-  
-/*
-* DEBUG ????????????????????????
-*/
-  private boolean DEBUG_ON;
-  
+    
 	private InputStream inputStream;
 	private OutputStream outputStream;
 
@@ -80,31 +71,12 @@ public class SerialComm extends Thread {
   
 /* Debugger class for the in/out datas inspecting. */  
  	private DebugContact contact;
-
-	/* A small <b>int</b> representing the number to be used to distinguish
-	 * between two consecutive packages. It can only take a value between 0 and
-	 * 255. Note that data is only sent to
-	 * As a default, <b>255</b> is used as a divider (unless specified otherwise
-	 * in the constructor)
-	 */
-  
-	private int id;
   
 /*
    * @TODO id must be declared, and used. (@link Serial class id.)
    */
-	public SerialComm(int id) {
-    this.DEBUG_ON = false;
-    this.id = id;
-    contact = new DebugContact();
-	}
- 
-	/*
-   * Default constructor
-   */
-  
 	public SerialComm() {
-		this((int)1);
+    contact = new DebugContact();
 	}
   
 /**
@@ -205,10 +177,7 @@ public class SerialComm extends Thread {
 
 				inputStream = serialPort.getInputStream();
 				outputStream = serialPort.getOutputStream();
-
-//				reader = (new Thread(new SerialReader(inputStream)));
-				end = false;
-//				this.start();
+        
 				connected = true;
 				contact.writeLog("connection on " + portName + " established");
 				contact.writeLog("Data time of (nanosec) = " + chartime);
@@ -250,9 +219,46 @@ public class SerialComm extends Thread {
       SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
   } 
   
+  public void Start()
+  {
+    end = false;
+		this.start();
+  }
+  
+  public void Stop()
+  {
+    if (isConnected())
+    {
+      end = true;
+      try {
+      this.join(0);
+      } catch (InterruptedException ie)
+      {
+        ie.printStackTrace(System.out);          
+      };
+    };
+    
+  }
+  
   public void run()
   {
     contact.writeLog("Hello from a thread!");
+    while (!end)
+    {
+//        end = true;
+    };
+    contact.writeLog("Bye, bye from thread !");
+/*    try {
+      inputStream.close();
+      outputStream.close();
+    }catch (IOException ioe)
+    {
+      ioe.printStackTrace(System.out);      
+    }
+    serialPort.close();
+		connected = false;*/
+//	contact.networkDisconnected(id);
+		contact.writeLog("connection has been ended.(from run procedure.).");
   }
   
 	/**
@@ -306,11 +312,13 @@ public class SerialComm extends Thread {
 	 *         otherwise.
 	 */
 	public boolean disconnect() {
-		boolean disconn = true;
-		end = true;
-		try {
-			this.join(100);
-		} catch (InterruptedException e1) {
+    boolean disconn = true;
+    if (isConnected())
+    { /* run() loop end */
+      end = true;
+      try {
+        this.join(100);
+      } catch (InterruptedException e1) {
 			e1.printStackTrace(System.out);
 			disconn = false;
 		}
@@ -328,9 +336,10 @@ public class SerialComm extends Thread {
 		}
 		serialPort.close();
 		connected = false;
-		contact.networkDisconnected();
-		contact.writeLog("connection disconnected");
-		return disconn;
+//		contact.networkDisconnected();
+		contact.writeLog("Connection disconnected.(from disconnect procedure).");
+    }
+    return disconn;
 	}
 
 	/**
