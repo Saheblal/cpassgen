@@ -24,8 +24,11 @@ import java.io.OutputStream;
 import java.util.*;
 
 
+
 public class SerialComm extends Thread {
     
+  int ImageSize = 1000;
+  
 	private InputStream inputStream;
 	private OutputStream outputStream;
 
@@ -71,6 +74,12 @@ public class SerialComm extends Thread {
   
 /* Debugger class for the in/out datas inspecting. */  
  	private DebugContact contact;
+
+/*
+   * ProcessImage object
+   */
+  
+  ProcessImage Image;
   
 /*
    * @TODO id must be declared, and used. (@link Serial class id.)
@@ -161,6 +170,7 @@ public class SerialComm extends Thread {
           int parity) {
 		CommPortIdentifier portIdentifier;
 		boolean conn = false;
+    Image = new ProcessImage(ImageSize);
 		try {
 			portIdentifier = CommPortIdentifier.getPortIdentifier(portName);
 			if (portIdentifier.isCurrentlyOwned()) {
@@ -177,7 +187,7 @@ public class SerialComm extends Thread {
 
 				inputStream = serialPort.getInputStream();
 				outputStream = serialPort.getOutputStream();
-        
+        this.start();
 				connected = true;
 				contact.writeLog("connection on " + portName + " established");
 				contact.writeLog("Data time of (nanosec) = " + chartime);
@@ -218,37 +228,18 @@ public class SerialComm extends Thread {
     return this.connect(portName, speed, SerialPort.DATABITS_8, 
       SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
   } 
-  
-  public void Start()
-  {
-    end = false;
-		this.start();
-  }
-  
-  public void Stop()
-  {
-    if (isConnected())
-    {
-      end = true;
-      try {
-      this.join(0);
-      } catch (InterruptedException ie)
-      {
-        ie.printStackTrace(System.out);          
-      };
-    };
     
-  }
-  
   public void run()
   {
     contact.writeLog("Hello from a thread!");
+    
     while (!end)
     {
+      
 //        end = true;
     };
     contact.writeLog("Bye, bye from thread !");
-/*    try {
+    try {
       inputStream.close();
       outputStream.close();
     }catch (IOException ioe)
@@ -256,7 +247,7 @@ public class SerialComm extends Thread {
       ioe.printStackTrace(System.out);      
     }
     serialPort.close();
-		connected = false;*/
+		connected = false;
 //	contact.networkDisconnected(id);
 		contact.writeLog("connection has been ended.(from run procedure.).");
   }

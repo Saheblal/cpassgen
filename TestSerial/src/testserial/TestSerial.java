@@ -91,12 +91,6 @@ public class TestSerial {
             System.exit(-1);            
           }
         }
-        if (input.equals("s")) {
-          Comm.Start();
-        };
-        if (input.equals("a")) {
-          Comm.Stop();
-        };
     }
   } catch (IOException e) {
 				System.out.println("There was an input error\n");
