@@ -13,6 +13,7 @@ extern "C" {
 #endif
 
     void Delay(int msec);
+    void Delay10uSec(int usec10);
 
 #ifdef	__cplusplus
 }
