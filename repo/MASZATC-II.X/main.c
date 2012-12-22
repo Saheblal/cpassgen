@@ -67,14 +67,6 @@ uint8_t main(void)
 //            LCDWrite(txt);
             old_inbutton = inbutton;
         }
-/*        PORTAbits.RA4 = 1;
-        PORTAbits.RA5 = 1;*/
-//        inbutton = InButton();
-        //LCDPut(InButton());
-/*        LCDClear();
-        PORTAbits.RA4 = 0;
-        PORTAbits.RA5 = 0;
-        Delay(1000);*/
     }
     return 0;
 }
