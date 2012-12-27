@@ -54,10 +54,15 @@ uint8_t main(void)
     InitApp();
 
 
+    /* Global interrupt enabled */
+
+    INTCONbits.GIE = 1;
+
     old_inbutton = 0x00;
     while(1)
     {
         inbutton = InButton();
+        inbutton = int_counter;
         if (inbutton != old_inbutton)
         {
 //            LCDClear();
@@ -65,6 +70,7 @@ uint8_t main(void)
             PrintBin(bbuffer, inbutton);
             LCDWrite(bbuffer);
 //            LCDWrite(txt);
+//            PORTB = inbutton;
             old_inbutton = inbutton;
         }
     }

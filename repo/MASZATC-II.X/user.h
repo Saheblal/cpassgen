@@ -43,3 +43,5 @@ typedef union {
 void InitApp(void);         /* I/O and Peripheral Initialization */
 /* Print byte value to binary character buffer to print the display. */
 char* PrintBin(char* buffer, unsigned char data);
+
+extern int int_counter;

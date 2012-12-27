@@ -8,6 +8,8 @@
 
 #include "system.h"
 
+int int_counter;
+
 /* Refer to the device datasheet for information about available
 oscillator configurations. */
 void ConfigureOscillator(void)

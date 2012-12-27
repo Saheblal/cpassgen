@@ -39,7 +39,36 @@ void InitApp(void)
 
     TRISAbits.TRISA4 = 0;
     TRISAbits.TRISA5 = 0;
-    
+
+    /* PORTB 4-5 as inputs */
+
+    TRISBbits.TRISB4 = 1;
+    TRISBbits.TRISB5 = 1;
+
+    /* RB3 is output for init signal. */
+    TRISBbits.TRISB3 = 0;
+    TRISBbits.TRISB0 = 0;
+
+    PORTBbits.RB3 = 1;  // clear PORTB 3 LED.
+    PORTBbits.RB0 = 1;  // clear PORTB 0 LED.
+
+    /* rising edge of RB pin have been generate the RB interrupt...*/
+
+    /* Enable RB port interrupt on change */
+
+    INTCONbits.RBIE = 1;
+
+    /* TMR 1 setting
+     * Crystal frequency is 15MHz, FOSC/4 = 3,75 MHz
+     *
+     */
+
+    T1CONbits.TMR1CS = 0;   // internal oscillator
+    /* Prescaler setting 1:8 */
+    T1CONbits.T1CKPS0 = 1;
+    T1CONbits.T1CKPS1 = 1;
+    T1CONbits.TMR1ON = 0;   // No start !
+
     LCDInit();
     
     /* Enable interrupts */
