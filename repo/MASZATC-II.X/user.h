@@ -11,6 +11,10 @@
 #define BUTTON_MENU	6
 #define BUTTON_START_STOP	5
 
+#define INIT_OUTPUT         PORTBbits.RB3
+#define START_STOP_INPUT_01 PORTBbits.RB4
+#define START_STOP_INPUT_02 PORTBbits.RB5
+
 typedef union {
     struct {
         unsigned	S407                : 1;

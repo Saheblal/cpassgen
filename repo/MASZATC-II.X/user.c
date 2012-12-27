@@ -57,6 +57,7 @@ void InitApp(void)
     /* Enable RB port interrupt on change */
 
     INTCONbits.RBIE = 1;
+    INTCONbits.PEIE = 1;    // Enable periphelial interrupt...
 
     /* TMR 1 setting
      * Crystal frequency is 15MHz, FOSC/4 = 3,75 MHz
@@ -67,7 +68,8 @@ void InitApp(void)
     /* Prescaler setting 1:8 */
     T1CONbits.T1CKPS0 = 1;
     T1CONbits.T1CKPS1 = 1;
-    T1CONbits.TMR1ON = 0;   // No start !
+    PIE1bits.TMR1IE = 1;    // enable TMR 1 interrupt...
+    T1CONbits.TMR1ON = 1;  
 
     LCDInit();
     

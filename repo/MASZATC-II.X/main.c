@@ -58,10 +58,18 @@ uint8_t main(void)
 
     INTCONbits.GIE = 1;
 
-    old_inbutton = 0x00;
+    old_inbutton = 0x01;
     while(1)
     {
         inbutton = InButton();
+/*        if (inbutton & 0x01)
+        {
+            T1CONbits.TMR1ON = 1;
+        }else
+        {
+            T1CONbits.TMR1ON = 0;
+        };*/
+
         inbutton = int_counter;
         if (inbutton != old_inbutton)
         {

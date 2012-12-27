@@ -26,13 +26,14 @@ void interrupt isr(void)
     /* Determine which flag generated the interrupts */
     if(INTCONbits.RBIF) // If RB port changed ...
     {
-        int_counter++;
+//        int_counter++;
         INTCONbits.RBIF = 0; /* Clear RB port changed interrupt flag. */
     }
-/*    else if (<Interrupt Flag 2>)
+    else if (PIR1bits.TMR1IF)   // TMR 1 interrupt ?
     {
-        <Interrupt Flag 2=0>; /* Clear Interrupt Flag 2 
-    }*/
+        int_counter++;
+        PIR1bits.TMR1IF = 0;    
+    }
     else
     {
         PORTBbits.RB3 = 0;  // Signal the unhandled interrupt.
