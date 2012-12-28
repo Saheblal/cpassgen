@@ -5,6 +5,7 @@
 #include <htc.h>           /* Global Header File */
 #include <stdint.h>        /* For uint8_t definition */
 #include <stdbool.h>       /* For true/false definition */
+#include <stdio.h>
 
 #include "system.h"        /* System funct/params, like osc/peripheral config */
 #include "user.h"          /* User funct/params, such as InitApp */
@@ -45,7 +46,7 @@ char txt[] = "This is a text.\0";
 /******************************************************************************/
 
 uint8_t main(void)
-{   unsigned char inbutton, old_inbutton;
+{   unsigned int inbutton, old_inbutton;
     char bbuffer[10];
     /* Configur;e the oscillator for the device */
     ConfigureOscillator();
@@ -59,6 +60,10 @@ uint8_t main(void)
     INTCONbits.GIE = 1;
 
     old_inbutton = 0x01;
+
+
+
+
     while(1)
     {
         inbutton = InButton();
@@ -75,7 +80,8 @@ uint8_t main(void)
         {
 //            LCDClear();
             CursorHome();
-            PrintBin(bbuffer, inbutton);
+            sprintf(bbuffer, "CNT:%4d", inbutton);
+//            PrintBin(bbuffer, inbutton);
             LCDWrite(bbuffer);
 //            LCDWrite(txt);
 //            PORTB = inbutton;

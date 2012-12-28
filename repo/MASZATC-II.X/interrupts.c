@@ -32,6 +32,9 @@ void interrupt isr(void)
     else if (PIR1bits.TMR1IF)   // TMR 1 interrupt ?
     {
         int_counter++;
+        Timer1OFF();        // Stop TMR1 timer
+        LoadTMR1(TMR1_LOAD_DATA);        //reload tmr1
+        Timer1ON();         /* Then start TMR1 again. */
         PIR1bits.TMR1IF = 0;    
     }
     else
