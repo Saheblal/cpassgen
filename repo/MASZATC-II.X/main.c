@@ -48,29 +48,44 @@ char txt[] = "This is a text.\0";
 uint8_t main(void)
 {   unsigned int inbutton, old_inbutton;
     char bbuffer[10];
+
     /* Configur;e the oscillator for the device */
     ConfigureOscillator();
 
     /* Initialize I/O and Peripherals for application */
     InitApp();
 
-
+    LCDClear();
     /* Global interrupt enabled */
 
     INTCONbits.GIE = 1;
 
-    old_inbutton = 0x01;
+    old_inbutton = 0x53;
 
-    SetDDRAMAddr(0x040);
+/*    SetDDRAMAddr(0x040);
     int usec = 7;
     int numb = (usec * 10) / 65;
     int md = (usec * 10) % 65;
 //    sprintf(bbuffer, "U=%d, N=%4.2f MD=%d", usec, numb, md);
-    sprintf(bbuffer, "%d,%d,%d", usec, numb, md / 10);
+    sprintf(bbuffer, "%d,%d,%d", usec, numb, md / 10);*/
 
+    LCDWrite("Initialize ");
+
+//    Delayusec(70);
+    Delay(1000);
+
+    LCDWrite(" OK ");
+
+    INTCONbits.GIE = 0;
+    
+    inbutton = int_counter;
+    sprintf(bbuffer, "CNT:%5d", inbutton);
+//            PrintBin(bbuffer, inbutton);
+    SetDDRAMAddr(0x040);
     LCDWrite(bbuffer);
 
-    while(1)
+    while (1);
+    while(0)
     {
         inbutton = InButton();
 /*        if (inbutton & 0x01)
@@ -93,6 +108,7 @@ uint8_t main(void)
 //            PORTB = inbutton;
             old_inbutton = inbutton;
         }
+
     }
     return 0;
 }

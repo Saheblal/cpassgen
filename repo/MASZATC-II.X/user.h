@@ -40,10 +40,9 @@
 #define T2POSTSCALER(post_code) T2CONbits.TOUTPS = post_code;
 
 #define LoadTMR2(data)          TMR2 = data
-#define LoadTMR2COMP(data)      PR2 = data
+#define LoadPR2(data)           PR2 = data
 
-
-#define TMR1_LOAD_DATA  0x00
+#define TMR1_LOAD_DATA  (0xFFFF - 1000)       // 655
 
 typedef union {
     struct {

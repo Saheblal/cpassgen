@@ -63,17 +63,16 @@ void InitApp(void)
 
     T1CONbits.TMR1CS = 0;       // internal oscillator
     /* Prescaler setting 1:8 */
-    T1PRESCALER(0x03);
+    T1PRESCALER(0x00);
 
     /* Prescale TMR2 = 1*/
     T2PRESCALER(0x00);
     /* Postscale TMR2 = 1*/
     T2POSTSCALER(0x00);
-
+    LoadTMR1(TMR1_LOAD_DATA);
     EnableTMR1INT();            // enable TMR 1 interrupt...
+
     Timer1ON();                 // Start TMR1 timer
-
-
 
     LCDInit();
     
