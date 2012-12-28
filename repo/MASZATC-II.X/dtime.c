@@ -2,6 +2,11 @@
 
 #include "dtime.h"
 
+void Delayusec(int delay)
+{   int prescaler;
+    prescaler = delay / 3.5;
+}
+
 void Delay10uSec(int usec10)
 {   int i;
     for (i = 0; i < usec10; i++);

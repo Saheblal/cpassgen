@@ -61,8 +61,12 @@ uint8_t main(void)
 
     old_inbutton = 0x01;
 
+    SetDDRAMAddr(0x040);
+    int usec = 60;
+    float numb = usec / 70;
+    sprintf(bbuffer, "Number = %5.3f", numb);
 
-
+    LCDWrite(bbuffer);
 
     while(1)
     {

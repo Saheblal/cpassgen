@@ -13,7 +13,6 @@ void LCDPut(unsigned char data)
     LCDSetData(data);
     LCDEnable();
     Delay(2);
-    LCDSetWrite();
     LCDDisable();
 }
 
@@ -86,11 +85,22 @@ int LCDInit()
 //        LCDSetWrite();
 //        XLCDRWPORT = 0;
     #endif
-    LCDCommand(FUNCTION_SET | DATA_LENGTH_8);
+    LCDCommand(FUNCTION_SET | DATA_LENGTH_8 | CHAR_LINES_2);
+    Delay(5);               //  5 msec
+    LCDCommand(FUNCTION_SET | DATA_LENGTH_8 | CHAR_LINES_2);
+    Delay10uSec(10);        // 10usec as user guide
+    LCDCommand(FUNCTION_SET | DATA_LENGTH_8 | CHAR_LINES_2);
+    Delay(5);               //  5 msec
+
     LCDCommand(DISPLAY_CONTROL | DISPLAY_ON);
     LCDCommand(CLEAR_DISPLAY);
 };
 
+
+void SetDDRAMAddr(int newaddr)
+{
+    LCDCommand(SET_DDRAM_ADDR | newaddr);
+}
 
 /* LCDWrite */
 void LCDWrite(char* c)

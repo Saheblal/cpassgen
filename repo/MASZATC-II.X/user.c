@@ -59,15 +59,21 @@ void InitApp(void)
 
     /* TMR 1 setting
      * Crystal frequency is 15MHz, FOSC/4 = 3,75 MHz
-     *
      */
 
     T1CONbits.TMR1CS = 0;       // internal oscillator
     /* Prescaler setting 1:8 */
-    T1PRESCALER(0b11);
-    
+    T1PRESCALER(0x03);
+
+    /* Prescale TMR2 = 1*/
+    T2PRESCALER(0x00);
+    /* Postscale TMR2 = 1*/
+    T2POSTSCALER(0x00);
+
     EnableTMR1INT();            // enable TMR 1 interrupt...
     Timer1ON();                 // Start TMR1 timer
+
+
 
     LCDInit();
     

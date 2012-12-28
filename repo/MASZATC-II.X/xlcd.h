@@ -84,6 +84,7 @@ extern "C" {
     void LCDClear();
     void CursorHome();
     void LCDWrite(char*);
+    void SetDDRAMAddr(int newaddr);
 
 #ifdef	__cplusplus
 }

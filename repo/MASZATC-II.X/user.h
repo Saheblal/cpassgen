@@ -15,6 +15,8 @@
 #define START_STOP_INPUT_01 PORTBbits.RB4
 #define START_STOP_INPUT_02 PORTBbits.RB5
 
+/* TIMER 1 defines. */
+
 #define Timer1OFF()     T1CONbits.TMR1ON = 0
 #define Timer1ON()      T1CONbits.TMR1ON = 1
 #define EnableTMR1INT()         PIE1bits.TMR1IE = 1
@@ -25,13 +27,21 @@
 #define DisableRBPORTINT()          INTCONbits.RBIE = 0
 #define LoadTMR1(data)          TMR1 = data
 
-#define T1PRESCALER(pre_code)   T1CONbits.T1CKPS = pre_code;
-#define T1PRESCALER_VALUE = 2 ^ pre_code;
+/* TIMER 2 defines. */
 
-#define T1PRE_1 T1CONbits.T1CKPS0 = 0; T1CONbits.T1CKPS1 = 0;
-#define T1PRE_2 T1CONbits.T1CKPS0 = 0; T1CONbits.T1CKPS1 = 1;
-#define T1PRE_4 T1CONbits.T1CKPS0 = 1; T1CONbits.T1CKPS1 = 0;
-#define T1PRE_8 T1CONbits.T1CKPS0 = 1; T1CONbits.T1CKPS1 = 1;
+#define Timer2OFF()     T2CONbits.TMR2ON = 0
+#define Timer2ON()      T2CONbits.TMR2ON = 1
+
+/* pre_code = 0 1:1, 1 1:2, 2 1:4, 3 1:8 */
+#define T1PRESCALER(pre_code)   T1CONbits.T1CKPS = pre_code;
+/* pre_code = 0 1:1, 1 1:4, 2 1:16 */
+#define T2PRESCALER(pre_code)   T2CONbits.T2CKPS = pre_code;
+/* post code = 0- 15 1:1 to 1:16 divorces. */
+#define T2POSTSCALER(post_code) T2CONbits.TOUTPS = post_code;
+
+#define LoadTMR2(data)          TMR2 = data
+#define LoadTMR2COMP(data)      PR2 = data
+
 
 #define TMR1_LOAD_DATA  0x00
 
