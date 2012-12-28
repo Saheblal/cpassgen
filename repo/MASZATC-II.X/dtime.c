@@ -1,10 +1,16 @@
 
-
+#include "system.h"
 #include "dtime.h"
 
-void Delayusec(int delay)
-{   int prescaler;
-    prescaler = delay / 3.5;
+/* delay may between 1usec - 56 usec*/
+
+void Delayusec(int delay, int& psc, int& dvd)
+{   int prescaler; int divider;
+    prescaler = (delay * 10) / (FYSEC * 10);
+    prescaler--;
+    psc = prescaler;
+    divider = ((delay * 10) % 35) / (FYSEC * 10);
+    dvd = divider;
 }
 
 void Delay10uSec(int usec10)

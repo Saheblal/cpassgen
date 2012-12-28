@@ -14,6 +14,7 @@ extern "C" {
 
     void Delay(int msec);
     void Delay10uSec(int usec10);
+    void Delayusec(int delay, int& psc, int& dvd);
 
 #ifdef	__cplusplus
 }
