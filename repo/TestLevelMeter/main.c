@@ -19,7 +19,19 @@
 /* Main Program                                                               */
 /******************************************************************************/
 
-#define COUNTER 1000
+#define COUNTER 10
+
+int phase = 0;
+
+void NextPhase()
+{
+    SetAllLEDforInput();
+    if ((phase++) == 10)
+        phase = 0;
+//    if (phase == 1)
+//        L1_ON(GREEN);
+}
+
 
 int16_t main(void)
 {
@@ -36,13 +48,15 @@ int16_t main(void)
 
     while(1)
     {
-        H1_LAT = 1;
+
+        LED_ON(GREEN, 1);
         for (i = 0; i < COUNTER; i++)
         {
             V5_LAT = 0;
         }
-        H1_LAT = 0;
-        for (i = 0; i < (COUNTER * 10); i++)
+        SetAllLEDOff();
+//        NextPhase();
+        for (i = 0; i < (COUNTER * 6); i++)
         {
             V5_LAT = 0;
         }

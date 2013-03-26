@@ -55,10 +55,20 @@
 
 /* TODO Application specific user parameters used in user.c may go here */
 
+enum e_LED_COLOR { RED, GREEN };
+
 /******************************************************************************/
 /* User Function Prototypes                                                   */
 /******************************************************************************/
 
-/* TODO User level functions prototypes (i.e. InitApp) go here */
+typedef struct {
+    volatile unsigned int* ADDRESS_GR;   // Portaddress, and bitnumber of green side
+    int bitnumb_GR;
+    volatile unsigned int* ADDRESS_RD;   // Portaddress, and bitnumber of red side
+    int bitnumb_RD;
+} LED_PORT;
 
 void InitApp(void); /* I/O and Peripheral Initialization */
+void LED_ON(enum e_LED_COLOR color, int); /* L1 LED ON */
+void SetAllLEDOff(); /* Set ALL display LED to off state.*/
+void SetAllLEDforInput(); /* Set ALL LED lines for input. */

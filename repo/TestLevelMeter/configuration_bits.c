@@ -19,8 +19,10 @@
 /* _TODO Fill in your configuration bits here and remove the #if 0. */
 
 /* The general style is below: */
-
-_FOSC(HS2_PLL16 & CSW_FSCM_OFF); /* Enables internal oscillator and clock sw/mon */
+/* Enables HS oscillator div 2, and PLL 16 (80Mhz)*/
+//_FOSC(HS2_PLL16 & CSW_FSCM_OFF);
+/* Enables HS oscillator direct (10Mhz)*/
+_FOSC(HS & CSW_FSCM_OFF);
 _FBORPOR(PWRT_OFF & BORV27 & PBOR_OFF & MCLR_EN); /* Ext MCLR, no brownout */
 _FWDT(WDT_OFF); /* Turns off watchdog timer */
 //_ICD(ICS_PGD1); /* Selects debug channel channel */
