@@ -69,7 +69,7 @@ uint8_t main(void)
 //    sprintf(bbuffer, "U=%d, N=%4.2f MD=%d", usec, numb, md);
     sprintf(bbuffer, "%d,%d,%d", usec, numb, md / 10);*/
 
-    LCDWrite("Initialize ");
+    LCDWrite("Initializee ");
 
 //    Delayusec(70);
     Delay(1000);
