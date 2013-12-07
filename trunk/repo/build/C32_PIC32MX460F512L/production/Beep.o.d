@@ -1,0 +1,29 @@
+build/C32_PIC32MX460F512L/production/Beep.o:  \
+Beep.c  \
+Beep.h  \
+ Graphics/Graphics.h  \
+Graphics/../GraphicsConfig.h  \
+ Graphics/DisplayDriver.h  \
+Graphics/gfxcolors.h  \
+ Graphics/../HardwareProfile.h  \
+ Graphics/../HWP_MIKROE_MX32_16PMP_ILI9341.h  \
+Graphics/../Compiler.h  \
+ Graphics/Primitive.h  \
+Graphics/GOL.h  \
+Graphics/ScanCodes.h  \
+ Graphics/Palette.h  \
+Graphics/Graphics.h  \
+Graphics/Button.h  \
+ Graphics/Window.h  \
+Graphics/GroupBox.h  \
+Graphics/StaticText.h  \
+ Graphics/Slider.h  \
+Graphics/CheckBox.h  \
+Graphics/RadioButton.h  \
+ Graphics/Picture.h  \
+Graphics/ProgressBar.h  \
+Graphics/EditBox.h  \
+ Graphics/ListBox.h  \
+Graphics/RoundDial.h  \
+Graphics/Meter.h  \
+ Graphics/DigitalMeter.h 
